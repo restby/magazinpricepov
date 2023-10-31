@@ -1,0 +1,50 @@
+.contacts {
+  margin-bottom: 40px;
+
+  & a {
+    color: $text-dark;
+    transition: color $trans-default;
+
+    @include hover-focus {
+      color: $text-action;
+      outline: none;
+
+      @include active {
+        color: rgba($text-action, 0.7);
+      }
+    }
+  }
+}
+
+// .contacts__container {}
+
+.contacts__tilte {
+  margin-bottom: 30px;
+}
+
+// .section-title {}
+
+.contacts__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 26px;
+  row-gap: 12px;
+
+  @include vp-767 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 30px;
+  }
+}
+
+.contacts__col a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & svg {
+    margin-right: 8px;
+  }
+}

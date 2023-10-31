@@ -1,0 +1,53 @@
+.promo {
+  margin-bottom: 50px;
+  padding-top: 400px;
+  min-height: 636px;
+  position: relative;
+
+  @include vp-1199 {
+    margin-bottom: 46px;
+    min-height: 386px;
+    padding-top: 200px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 40px;
+  }
+
+  & > picture img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    object-fit: cover;
+  }
+}
+
+.promo__text {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: $text-light;
+  max-width: 58%;
+
+  @include vp-1199 {
+    font-size: 16px;
+
+    .scroll-lock & {
+      position: static;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    max-width: 90%;
+  }
+}
