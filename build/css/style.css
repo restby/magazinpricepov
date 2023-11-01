@@ -1808,6 +1808,7 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .modal__info table.price-table {
@@ -1939,6 +1940,21 @@ button,
   .modal__price-descr p {
     font-size: 14px;
   }
+}
+
+.modal__mark {
+  position: absolute;
+  padding: 10px;
+  left: 0;
+  top: -10px;
+  border-radius: 6px;
+  color: #f6f5f5;
+}
+.modal__mark--in-stock {
+  background-color: #01aa52;
+}
+.modal__mark--to-order {
+  background-color: #6eacfa;
 }
 
 .btn {
