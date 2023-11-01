@@ -1,0 +1,187 @@
+<div class="modal modal--preload" data-modal="item-card">
+  <div class="modal__wrapper">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__content">
+      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+        <svg width="15" height="15">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="modal__container">
+        <div class="modal__tabs" data-tabs="parent" data-delay="300">
+
+          <div class="modal__tabs-controls">
+            <button class="modal__tabs-control is-active" type="button" data-tabs="control">Без колес</button>
+            <button class="modal__tabs-control" type="button" data-tabs="control">2 колеса
+              R13</button>
+          </div>
+
+          <div class="modal__tabs-content" data-tabs="content">
+
+            <div class="modal__tabs-element" data-tabs="element">
+              <div class="modal__img-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-240-00.webp">
+                  <img src="img/items/1L-00/1l-240-00.jpg" alt="Титан Лодочный-2 4.0 (Гидроцикл), фото без колес"
+                    data-item-img>
+                </picture>
+              </div>
+            </div>
+
+            <div class="modal__tabs-element" data-tabs="element">
+              <div class="modal__img-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-240-01.webp">
+                  <img src="img/items/1L-00/1l-240-01.jpg" alt="Титан Лодочный-2 4.0 (Гидроцикл), фото с колесами">
+                </picture>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- <div class="modal__img-container">
+              <picture>
+                <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-240-01.webp">
+                <img src="img/items/1L-00/1l-240-01.jpg" alt="Титан Лодочный-2 4.0 (Гидроцикл), фото с колесами" data-item-img>
+              </picture>
+            </div> -->
+        <div class="modal__info">
+          <h3 data-item-title>test data-item-title</h3>
+          <div class="modal__descr">
+            <p data-item-descr>test data-item-descr</p>
+          </div>
+          <span></span>
+
+          <table class="price-table">
+            <caption>Таблица цен в зависимости от комплектации</caption>
+            <tr>
+              <th colspan="2">Cтупица 2хВАЗ-2108(4*98)</th>
+            </tr>
+            <tr>
+              <td data-item-option="noWheelOption">test data-item-option="noWheelOption"</td>
+              <td data-item-option="wheel2R13Option">test data-item-option="wheel2R13Option"</td>
+            </tr>
+            <tr>
+              <td><span data-item-price="noWheel">test data-item-price="noWheel"<svg width="10" height="18">
+                    <use href="img/sprite.svg#icon-rouble"></use>
+                  </svg></span>
+              </td>
+              <td><span data-item-price="wheel2R13">test data-item-price="wheel2R13"<svg width="10" height="18">
+                    <use href="img/sprite.svg#icon-rouble"></use>
+                  </svg></span></td>
+            </tr>
+          </table>
+          <div class="modal__price-descr">
+            <p>* Цена указаны без учета доставки. В&nbsp;зависимости от&nbsp;региона цены на&nbsp;доставку могут
+              отличаться. Доставка оговаривается отдельно. Для
+              уточнения, свяжитесь с&nbsp;нашими специалистами.</p>
+          </div>
+
+          <!-- <table class="price-table">
+                    <caption>Таблица цен в зависимости от комплектации</caption>
+                    <tr>
+                      <th colspan="2">Cтупица 2хНИВА(5*139.7)</th>
+                    </tr>
+                    <tr>
+                      <td>Без колес</td>
+                    </tr>
+                    <tr>
+                      <td><span>53200<svg width="10" height="18">
+                            <use href="img/sprite.svg#icon-rouble"></use>
+                          </svg></span></td>
+                    </tr>
+                  </table> -->
+
+          <table class="info">
+            <caption>Основные характеристики</caption>
+            <tr>
+              <td>Габаритные размеры</td>
+              <td data-dimensions>test data-dimensions</td>
+            </tr>
+            <tr>
+              <td>Полная грузоподъемность по паспорту</td>
+              <td data-full-load-capacity>test data-full-load-capacity</td>
+            </tr>
+            <tr>
+              <td>Снаряженная масса</td>
+              <td data-curb-weight>test data-curb-weight</td>
+            </tr>
+            <tr>
+              <td>Подвеска</td>
+              <td>Рессорно-амортизаторная подвеска
+              </td>
+            </tr>
+            <tr>
+              <td>Кол-во листов рессоры</td>
+              <td data-count-spring-leaves>test data-count-spring-leaves
+              </td>
+            </tr>
+            <tr>
+              <td>Кол-во осей</td>
+              <td data-count-axes>test data-count-axes
+              </td>
+            </tr>
+            <tr>
+              <td>Нагрузка на одну ось</td>
+              <td data-single-axle-load>test data-single-axle-load
+              </td>
+            </tr>
+            <tr>
+              <td>Дорожный просвет</td>
+              <td data-clearance>test data-clearance
+              </td>
+            </tr>
+            <tr>
+              <td>Размер колеса для оси ВАЗ</td>
+              <td>185/70 R13, дюйм
+              </td>
+            </tr>
+            <!-- <tr>
+                      <td>Размер колеса для оси НИВА</td>
+                      <td>185/75 R16, дюйм
+                      </td>
+                    </tr> -->
+            <tr>
+              <td>Нагрузка на сцепное устройство</td>
+              <td>100, кг
+              </td>
+            </tr>
+            <tr>
+              <td>Тип ТСУ</td>
+              <td>шар ø50,
+              </td>
+            </tr>
+            <tr>
+              <td>Лампа фонарей</td>
+              <td>Лампа накаливания
+              </td>
+            </tr>
+            <tr>
+              <td>Тормоз</td>
+              <td>без тормозной системы
+              </td>
+            </tr>
+            <tr>
+              <td>Штекер</td>
+              <td>вилка фаркопа 7 pin, 12В,
+              </td>
+            </tr>
+            <tr>
+              <td>Защитное покрытие</td>
+              <td>горячее цинкование
+              </td>
+            </tr>
+            <tr>
+              <td>Размеры лодки</td>
+              <td data-boat-dimensions>test data-boat-dimensions</td>
+            </tr>
+            <tr>
+              <td>Функция самосвала</td>
+              <td data-dump-truck-function>test data-dump-truck-function</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
