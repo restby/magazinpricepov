@@ -231,6 +231,7 @@ const setItemData = () => {
             itemDumpTruckFunctionElement.textContent = items[itemDataValue][Object.keys(itemDumpTruckFunctionElement.dataset)[0]];
           }
 
+          // ???
           if (document.querySelector('[data-item-img]')) {
             const itemImg = document.querySelector('[data-item-img]');
 
@@ -245,6 +246,7 @@ const setItemData = () => {
             let updatedAltText = altText.replace(imgElement.getAttribute('alt'), items[itemDataValue].itemTitle);
             imgElement.setAttribute('alt', updatedAltText);
           }
+          // ???
 
           changeImagesUrl(items, itemDataValue);
         }

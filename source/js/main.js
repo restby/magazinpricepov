@@ -5,6 +5,7 @@ import {initBiaxialSlider} from './modules/initBiaxialSlider';
 import {initBoatSlider} from './modules/initBoatSlider';
 import {initTabs} from './modules/tabs/init-tabs';
 import {Burger} from './modules/header/burger';
+import {setItemData} from './business/setItemData';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initUniaxialSlider();
     initBiaxialSlider();
     initBoatSlider();
+    setItemData();
   });
 });
 
