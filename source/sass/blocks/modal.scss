@@ -141,12 +141,15 @@
   align-self: center;
   padding: 10px 10px;
   border-radius: 14px;
-  border: 1px solid $color-default-dark;
-  background-color: $color-default-green;
+  // border: 1px solid $color-default-dark;
+  // background-color: $color-default-green;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
-  color: $text-light;
+  // color: $text-light;
+  color: $text-action;
+  background-color: $color-default-white;
+  border: 1px solid $color-default-green;
   text-transform: uppercase;
   transition: border-color $trans-default, background-color $trans-default, color $trans-default;
   cursor: pointer;
@@ -160,9 +163,9 @@
 
   @include hover-focus {
     outline: none;
-    color: $text-action;
-    background-color: $color-default-white;
-    border: 1px solid $color-default-green;
+    color: $text-light;
+    background-color: $color-default-green;
+    border: 1px solid $color-default-dark;
 
     @include active {
       opacity: 0.7;
@@ -176,9 +179,9 @@
   }
 
   &.is-active {
-    color: $text-action;
-    background-color: $color-default-white;
-    border: 1px solid $color-default-green;
+    color: $text-light;
+    background-color: $color-default-green;
+    border: 1px solid $color-default-dark;
   }
 }
 

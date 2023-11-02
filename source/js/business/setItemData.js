@@ -230,27 +230,12 @@ const setItemData = () => {
             const itemDumpTruckFunctionElement = document.querySelector('[data-dump-truck-function]');
             itemDumpTruckFunctionElement.textContent = itemsDataObject[itemDataValue][Object.keys(itemDumpTruckFunctionElement.dataset)[0]];
           }
-
           // ???
           if (document.querySelector('[data-item-img]')) {
-            // const itemImg = document.querySelector('[data-item-img]');
-
-            // let sourceElement = itemImg.querySelector('source');
-            // let imgElement = itemImg.querySelector('img');
-            // let altText = imgElement.getAttribute('alt');
-
-            // sourceElement.setAttribute('srcset', `img/items/${itemsDataObject[itemDataValue].itemImgFileNameStart}.webp`);
-
-            // imgElement.setAttribute('src', `img/items/${itemsDataObject[itemDataValue].itemImgFileNameStart}.jpg`);
-
-            // let updatedAltText = altText.replace(imgElement.getAttribute('alt'), itemsDataObject[itemDataValue].itemTitle);
-            // imgElement.setAttribute('alt', updatedAltText);
-
             changeImagesUrl(itemsDataObject, itemDataValue);
           }
-          // ???
+          // ?>> Проблема с заглушкой-изображением
 
-          // changeImagesUrl(itemsDataObject, itemDataValue);
         }
       });
     });
