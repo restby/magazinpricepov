@@ -84,9 +84,9 @@
             <div class="catalog__wrapper">
               <h1 class="catalog__title section-title">Прицепы для водной техники</h1>
 
-              <div class="catalog__element">
+              <div class="catalog__element" data-catalog__element>
 
-                <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-t-l-250">
+                <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-card" data-item="test">
                   <div class="slide__container">
                     <div class="slide__img-container">
                       <div class="slide__mark slide__mark--in-stock">В наличии</div>
@@ -103,7 +103,24 @@
                   </div>
                 </div>
 
-                <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-t-l-143">
+                <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-t-l-250" data-item="tl250">
+                  <div class="slide__container">
+                    <div class="slide__img-container">
+                      <div class="slide__mark slide__mark--in-stock">В наличии</div>
+                      <picture>
+                        <source type="image/webp" srcset="img/items/1L-00/1l-250-00.webp">
+                        <img width="400" height="200" loading="lazy" src="img/items/1L-00/1l-250-00.jpg"
+                          alt="Титан Лодочный-2 5.0.">
+                      </picture>
+                    </div>
+                    <div class="slide__content">
+                      <h3 class="slide__title">Титан Лодочный-2 5.0</h3>
+                      <span class="slide__price">Цена от: 1926,27 BYN</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-t-l-143" data-item="tl143">
                   <div class="slide__container">
                     <div class="slide__img-container">
                       <div class="slide__mark slide__mark--to-order">Под заказ</div>
@@ -120,7 +137,7 @@
                   </div>
                 </div>
 
-                <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-t-l-240">
+                <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-t-l-240" data-item="tl240">
                   <div class="slide__container">
                     <div class="slide__img-container">
                       <div class="slide__mark slide__mark--to-order">Под заказ</div>
@@ -795,14 +812,14 @@
                 </tr>
                 <tr>
                   <td>
-                    <span data-item-price="noWheel">test data-item-price="noWheel"></span>
+                    <span data-item-price="noWheel">test data-item-price="noWheel"</span>
                   </td>
                   <td>
                     <span data-item-price="wheel2R13">test data-item-price="wheel2R13"</span>
                   </td>
                 </tr>
               </table>
-              <div class="modal__price-descr">
+              <div class="modal__price-descr" data-item-price-descr>
                 <p>* Цена указаны без учета доставки. В&nbsp;зависимости от&nbsp;региона цены на&nbsp;доставку могут
                   отличаться. Доставка оговаривается отдельно. Для
                   уточнения, свяжитесь с&nbsp;нашими специалистами.</p>
