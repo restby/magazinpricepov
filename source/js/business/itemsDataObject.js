@@ -1,4 +1,4 @@
-const items = {
+const itemsDataObject = {
   tl250: {
     itemTitle: 'Титан Лодочный-2 5.0',
     itemDescr: 'Предназначен для килевых и&nbsp; плоскодонных лодок максимальной длиной до&nbsp;5&nbsp;м. Продольные ложементы имеют регулируемый угол наклона и&nbsp; оборудованы передвижными кронштейнами. Они могут быть установлены на&nbsp;необходимую высоту и &nbsp;ширину лодки.',
@@ -295,14 +295,14 @@ const items = {
     clearance: 'mock = 250, мм',
     boatDimensions: 'mock = 4000, мм',
     dumpTruckFunction: 'mock = Нет',
-    itemImgFileNameStart: '1L-00/1l-250-00',
-    itemImgFileNameWheel2R13: '1L-00/1l-250-01',
+    urlNoWheel: '1L-00/1l-250-00',
+    urlWheel2R13: '1L-00/1l-250-01',
   },
 };
 
-for (let key in items) {
-  if (items[key].itemDescr) {
-    items[key].itemDescr = items[key].itemDescr.replace(/&nbsp;/g, '\u00A0');
+for (let key in itemsDataObject) {
+  if (itemsDataObject[key].itemDescr) {
+    itemsDataObject[key].itemDescr = itemsDataObject[key].itemDescr.replace(/&nbsp;/g, '\u00A0');
   }
 }
-export {items};
+export {itemsDataObject};
