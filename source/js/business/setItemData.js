@@ -20,6 +20,16 @@ const setItemData = () => {
         }
 
         if (itemsDataObject.hasOwnProperty(itemDataValue)) {
+
+          const itemImg = document.querySelector('[data-item-img]');
+          let sourceElement = itemImg.querySelector('source');
+          let imgElement = itemImg.querySelector('img');
+          let altText = imgElement.getAttribute('alt');
+          sourceElement.setAttribute('srcset', `img/items/${itemsDataObject[itemDataValue].urlNoWheel}.webp`);
+          imgElement.setAttribute('src', `img/items/${itemsDataObject[itemDataValue].urlNoWheel}.jpg`);
+          let updatedAltText = altText.replace(imgElement.getAttribute('alt'), `${itemsDataObject[itemDataValue].itemTitle}, 'фото без колес'`);
+          imgElement.setAttribute('alt', updatedAltText);
+
           if (document.querySelector('[data-item-option="noWheelOption"]')) {
             const dataItemElement = document.querySelector('[data-item-option="noWheelOption"]');
             const dataItemPrice = dataItemElement.getAttribute('data-item-option');
