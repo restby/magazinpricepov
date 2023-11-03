@@ -1,5 +1,5 @@
 import {itemsDataObject} from './itemsDataObject';
-import {changeImagesUrl} from './changeImagesUrl';
+import {changeImagesData} from './changeImagesData';
 
 const setItemData = () => {
 
@@ -242,7 +242,7 @@ const setItemData = () => {
           }
           // ???
           if (document.querySelector('[data-item-img]')) {
-            changeImagesUrl(itemsDataObject, itemDataValue);
+            changeImagesData(itemsDataObject, itemDataValue);
           }
           // ?>> Проблема с заглушкой-изображением
 

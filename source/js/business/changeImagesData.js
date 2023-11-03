@@ -1,6 +1,6 @@
 import {setImagesData} from './setImagesData';
 
-const changeImagesUrl = (itemsObject, itemsObjectKey) => {
+const changeImagesData = (itemsObject, itemsObjectKey) => {
   if (document.querySelectorAll('[data-button-value]')) {
     const buttons = document.querySelectorAll('[data-button-value]');
 
@@ -33,4 +33,4 @@ const changeImagesUrl = (itemsObject, itemsObjectKey) => {
 
 };
 
-export {changeImagesUrl};
+export {changeImagesData};
