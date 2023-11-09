@@ -2776,9 +2776,15 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
   column-gap: 20px;
+}
+
+.page-footer__about {
+  width: 100%;
 }
 
 .page-footer__phone {
@@ -2820,6 +2826,25 @@ button,
 .page-footer__link--phone.focus-visible:focus:active {
   color: #01aa52;
   border-color: rgba(255, 255, 255, 0);
+}
+
+.about {
+  padding-top: 25px;
+  font-size: 12px;
+  line-height: normal;
+}
+
+.about a[href] {
+  color: #5b5b5b;
+}
+
+.about p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
 }
 
 .catalog__title {
@@ -2967,6 +2992,16 @@ button,
   .nav__list--footer a:hover:not(.focus-visible):active {
     border-color: rgba(255, 255, 255, 0);
   }
+
+  .about a[href]:hover:not(.focus-visible) {
+    color: #01aa52;
+    outline: none;
+    border-bottom: 1px solid #01aa52;
+  }
+
+  .about a[href]:hover:not(.focus-visible):active {
+    border-color: rgba(255, 255, 255, 0);
+  }
 }
 
 @media (min-width: 1199px) {
@@ -2977,6 +3012,12 @@ button,
   }
 
   .nav__list--footer a.focus-visible:focus {
+    color: #01aa52;
+    outline: none;
+    border: 1px solid #01aa52;
+  }
+
+  .about a[href].focus-visible:focus {
     color: #01aa52;
     outline: none;
     border: 1px solid #01aa52;
@@ -3205,8 +3246,6 @@ button,
   }
 
   .page-footer__wrapper {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -3220,6 +3259,12 @@ button,
   }
 
   .page-footer__nav {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .page-footer__about {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
@@ -3236,6 +3281,11 @@ button,
   .page-footer__link--phone {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .about a[href].focus-visible:focus {
+    color: #5b5b5b;
+    border: 1px solid #01aa52;
   }
 
   .catalog__title {
@@ -3297,6 +3347,16 @@ button,
   }
 
   .nav__list--footer a:hover:not(.focus-visible):active {
+    color: #5b5b5b;
+  }
+
+  .about a[href]:hover:not(.focus-visible) {
+    color: #01aa52;
+    outline: none;
+    border-bottom: 1px solid #01aa52;
+  }
+
+  .about a[href]:hover:not(.focus-visible):active {
     color: #5b5b5b;
   }
 }

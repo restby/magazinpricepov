@@ -1,0 +1,53 @@
+.about {
+  padding-top: 25px;
+  font-size: 12px;
+  line-height: normal;
+
+  & a[href] {
+    color: $text-dark;
+
+    @include vp-1200 {
+      @include hover {
+        color: $text-action;
+        outline: none;
+        border-bottom: 1px solid $color-default-green;
+
+        @include active {
+          border-color: $color-transparent;
+        }
+      }
+
+      @include focus {
+        color: $text-action;
+        outline: none;
+        border: 1px solid $color-default-green;
+      }
+    }
+
+    @include vp-1199 {
+      @include hover {
+        color: $text-action;
+        outline: none;
+        border-bottom: 1px solid $text-action;
+
+        @include active {
+          color: $text-dark;
+        }
+      }
+
+      @include focus {
+        color: $text-dark;
+        border: 1px solid $text-action;
+      }
+    }
+  }
+
+  & p {
+    margin: 0;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -8,11 +8,11 @@
 .page-footer__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   column-gap: 20px;
 
   @include vp-1199 {
     // flex-direction: column;
-    flex-wrap: wrap;
     align-items: flex-start;
     row-gap: 30px;
   }
@@ -29,6 +29,15 @@
 }
 
 .page-footer__nav {
+  @include vp-1199 {
+    order: 2;
+    // width: 100%;
+  }
+}
+
+.page-footer__about {
+  width: 100%;
+
   @include vp-1199 {
     order: 3;
     // width: 100%;
