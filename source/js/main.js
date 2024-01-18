@@ -25,6 +25,33 @@ window.addEventListener('DOMContentLoaded', () => {
     initUniaxialSlider();
     initBiaxialSlider();
     initBoatSlider();
+
+    const itemsDefaultPriceText = document.querySelectorAll('.modal__price-text');
+
+    const yoomoneyFormPriceInputs = document.querySelectorAll('.yoomoney-form__price-input');
+
+    // // Перебираем элементы из первого массива
+    // itemsDefaultPriceText.forEach((item, index) => {
+    //   // Получаем текст из элемента
+    //   const textValue = item.textContent.trim();
+
+    //   // Преобразуем текст в число, заменяем запятую на точку
+    //   const numericValue = parseFloat(textValue.replace(',', '.'));
+
+    //   // Устанавливаем значение в соответствующий элемент из второго массива
+    //   yoomoneyFormPriceInputs[index].value = isNaN(numericValue) ? '' : numericValue;
+    // });
+
+    const buttonsPrice = document.querySelectorAll('.modal__tabs-control.is-active');
+    buttonsPrice.forEach((button, index) => {
+      const dataPriceValue = button.getAttribute('data-price');
+      // Преобразовываем строку в число и заменяем запятую на точку
+      const numericValue = parseFloat(dataPriceValue.replace(',', '.'));
+
+      // Записываем полученное значение в атрибут value соответствующего элемента из второго массива
+      yoomoneyFormPriceInputs[index].value = isNaN(numericValue) ? '' : numericValue;
+  });
+
   });
 });
 

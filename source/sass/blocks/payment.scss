@@ -1,0 +1,44 @@
+.payment {}
+
+.payment__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  form {
+    margin: 0;
+  }
+
+  button.ym-btn-pay.payment__button--yoomoney {
+    padding: 12px 20px;
+    border-radius: 16px;
+    border: 1px solid $color-default-dark;
+    background-color: $color-default-green;
+    color: $text-light;
+    text-transform: uppercase;
+  }
+
+  .ym-payment-btn-block.ym-align-space-between {
+    margin-top: 0;
+  }
+}
+
+.payment__text {
+  margin: 0;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-right: 10px;
+  }
+}
+
+.payment__inner {
+  &--yoomoney {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.payment__button {}
