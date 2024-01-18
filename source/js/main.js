@@ -37,8 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //   // Преобразуем текст в число, заменяем запятую на точку
     //   const numericValue = parseFloat(textValue.replace(',', '.'));
-
-    //   // Устанавливаем значение в соответствующий элемент из второго массива
     //   yoomoneyFormPriceInputs[index].value = isNaN(numericValue) ? '' : numericValue;
     // });
 
