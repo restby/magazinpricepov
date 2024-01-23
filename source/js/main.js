@@ -5,6 +5,7 @@ import {initBiaxialSlider} from './modules/initBiaxialSlider';
 import {initBoatSlider} from './modules/initBoatSlider';
 import {initTabs} from './modules/tabs/init-tabs';
 import {Burger} from './modules/header/burger';
+import {setDefaultPrice, setPrice} from './business/setPrice';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -25,28 +26,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initUniaxialSlider();
     initBiaxialSlider();
     initBoatSlider();
-
-    const itemsDefaultPriceText = document.querySelectorAll('.modal__price-text');
-
-    const yoomoneyFormPriceInputs = document.querySelectorAll('.yoomoney-form__price-input');
-
-    // // Перебираем элементы из первого массива
-    // itemsDefaultPriceText.forEach((item, index) => {
-    //   // Получаем текст из элемента
-    //   const textValue = item.textContent.trim();
-
-    //   // Преобразуем текст в число, заменяем запятую на точку
-    //   const numericValue = parseFloat(textValue.replace(',', '.'));
-    //   yoomoneyFormPriceInputs[index].value = isNaN(numericValue) ? '' : numericValue;
-    // });
-
-    const buttonsPrice = document.querySelectorAll('.modal__tabs-control.is-active');
-    buttonsPrice.forEach((button, index) => {
-      const dataPriceValue = button.getAttribute('data-price');
-      const numericValue = parseFloat(dataPriceValue.replace(',', '.'));
-      yoomoneyFormPriceInputs[index].value = isNaN(numericValue) ? '' : numericValue;
-  });
-
+    setDefaultPrice();
+    setPrice();
   });
 });
 
