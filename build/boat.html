@@ -19,7 +19,7 @@
     <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" crossorigin="anonymous">
     <title>Прицепы для водной техники</title>
     <!-- yookassa -->
-    <link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css">
+    <!-- <link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css"> -->
     <!-- yookassa -->
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -287,50 +287,49 @@
             </div>
             <div class="modal__info">
               <h3>Титан Лодочный-2 5.0</h3>
-              <!-- <div class="modal__descr">
-                <p>Предназначен для килевых и&nbsp;плоскодонных лодок максимальной длиной до&nbsp;5&nbsp;м.
-                  Продольные ложементы имеют регулируемый угол наклона и&nbsp;оборудованы передвижными кронштейнами. Они
-                  могут быть
-                  установлены на&nbsp;необходимую высоту и&nbsp;ширину лодки.</p>
-              </div> -->
-              <span></span>
-
-              <table class="price-table">
-                <caption>Таблица цен в зависимости от комплектации</caption>
-                <tr>
-                  <th colspan="2">Cтупица 2хВАЗ-2108(4*98)</th>
-                </tr>
-                <tr>
-                  <td>Без колес</td>
-                  <td>2 колеса R13</td>
-                </tr>
-                <tr>
-                  <td>1926,27 BYN
-                  </td>
-                  <td>2232,27 BYN</td>
-                </tr>
-              </table>
-
-              <div class="modal__price-descr">
-                <p>Осуществляем доставку по&nbsp;РБ.</p>
+              <div class="modal__price-row">
+                <span class="modal__price-sum">0</span>
+                <button class="modal__price-pay" type="button">Оформить</button>
               </div>
 
-
               <!-- start you-kassa -->
-              <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
+              <!-- <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
                 <div class="ym-payment-btn-block ym-align-space-between yoomoney-form__row">
                   <div class="ym-input-icon-rub yoomoney-form__wrapper">
                     <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any">
                   </div>
                   <button data-text="Заплатить" class="ym-btn-pay ym-result-price yoomoney-form__pay-button">
-                    <span class="ym-text-crop yoomoney-form__pay-button-text">Заплатить</span>
-                    <!-- <span class="ym-price-output"></span> -->
+                    <span class="ym-text-crop yoomoney-form__pay-button-text">Оплатить</span>
                   </button>
+                </div>
+                <input name="shopId" type="hidden" value="278539">
+              </form> -->
+
+              <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
+                <div class="ym-customer-info yoomoney-form__info">
+                  <h2 class="ym-block-title yoomoney-form__text">Введите ваши данные</h2>
+                  <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email" placeholder="Email" type="text" value="">
+                  <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone" placeholder="Телефон" type="text" value="">
+                  <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name" placeholder="ФИО" type="text" value="">
+                  <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress" placeholder="Адрес" type="text" value="">
+                  <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails" placeholder="Комментарий" value=""></textarea>
+                </div>
+                <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
+                    <div class="ym-input-icon-rub">
+                        <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any">
+                    </div>
+                    <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
+                      <span class="ym-text-crop">Оплатить</span>
+                      <span class="ym-price-output"></span>
+                    </button>
                 </div>
                 <input name="shopId" type="hidden" value="278539">
               </form>
               <!-- end you-kassa -->
 
+              <div class="modal__price-descr">
+                <p>Также осуществляем доставку и&nbsp;по&nbsp;территории&nbsp;РБ.</p>
+              </div>
 
               <!-- <table class="price-table">
                 <caption>Таблица цен в зависимости от комплектации</caption>
@@ -481,6 +480,15 @@
               </div>
             </div>
 
+            <div class="modal__info">
+              <h3>Титан Лодочный-1 4.3</h3>
+              <div class="modal__price-row">
+                <span class="modal__price-sum">0</span>
+                <button class="modal__price-pay" type="button">Оформить</button>
+              </div>
+              <div class="modal__price-descr">
+                <p>Также осуществляем доставку и&nbsp;по&nbsp;территории&nbsp;РБ.</p>
+              </div>
               <!-- start you-kassa -->
               <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
                 <div class="ym-payment-btn-block ym-align-space-between yoomoney-form__row">
@@ -488,21 +496,14 @@
                     <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any">
                   </div>
                   <button data-text="Заплатить" class="ym-btn-pay ym-result-price yoomoney-form__pay-button">
-                    <span class="ym-text-crop yoomoney-form__pay-button-text">Заплатить</span>
-                    <!-- <span class="ym-price-output"></span> -->
+                    <span class="ym-text-crop yoomoney-form__pay-button-text">Оплатить</span>
                   </button>
                 </div>
                 <input name="shopId" type="hidden" value="278539">
               </form>
               <!-- end you-kassa -->
 
-
-
-            <div class="modal__info">
-              <h3>Титан Лодочный-1 4.3</h3>
-              <span></span>
-
-              <table class="price-table">
+              <!-- <table class="price-table">
                 <caption>Таблица цен в зависимости от комплектации</caption>
                 <tr>
                   <th colspan="2">Cтупица 2хВАЗ-2108(4*98)</th>
@@ -516,10 +517,7 @@
                   </td>
                   <td>2003,79 BYN</td>
                 </tr>
-              </table>
-              <div class="modal__price-descr">
-                <p>Осуществляем доставку по&nbsp;РБ.</p>
-              </div>
+              </table> -->
 
               <!-- <table class="price-table">
                 <caption>Таблица цен в зависимости от комплектации</caption>
@@ -671,8 +669,18 @@
               </div>
             </div>
 
-
-
+            <div class="modal__info">
+              <h3>Титан Лодочный-2 4.0 (Гидроцикл)</h3>
+              <!-- <div class="modal__descr">
+                <p>Предназначен для перевозки вашего гидроцикла.</p>
+              </div> -->
+              <div class="modal__price-row">
+                <span class="modal__price-sum">0</span>
+                <button class="modal__price-pay" type="button">Оформить</button>
+              </div>
+              <div class="modal__price-descr">
+                <p>Также осуществляем доставку и&nbsp;по&nbsp;территории&nbsp;РБ.</p>
+              </div>
               <!-- start you-kassa -->
               <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
                 <div class="ym-payment-btn-block ym-align-space-between yoomoney-form__row">
@@ -680,24 +688,14 @@
                     <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any">
                   </div>
                   <button data-text="Заплатить" class="ym-btn-pay ym-result-price yoomoney-form__pay-button">
-                    <span class="ym-text-crop yoomoney-form__pay-button-text">Заплатить</span>
-                    <!-- <span class="ym-price-output"></span> -->
+                    <span class="ym-text-crop yoomoney-form__pay-button-text">Оплатить</span>
                   </button>
                 </div>
                 <input name="shopId" type="hidden" value="278539">
               </form>
               <!-- end you-kassa -->
 
-
-
-            <div class="modal__info">
-              <h3>Титан Лодочный-2 4.0 (Гидроцикл)</h3>
-              <div class="modal__descr">
-                <p>Предназначен для перевозки вашего гидроцикла.</p>
-              </div>
-              <span></span>
-
-              <table class="price-table">
+              <!-- <table class="price-table">
                 <caption>Таблица цен в зависимости от комплектации</caption>
                 <tr>
                   <th colspan="2">Cтупица 2хВАЗ-2108(4*98)</th>
@@ -711,11 +709,7 @@
                   </td>
                   <td>2206,77 BYN</td>
                 </tr>
-              </table>
-
-              <div class="modal__price-descr">
-                <p>Осуществляем доставку по&nbsp;РБ.</p>
-              </div>
+              </table> -->
 
               <!-- <table class="price-table">
                 <caption>Таблица цен в зависимости от комплектации</caption>

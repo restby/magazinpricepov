@@ -1670,6 +1670,7 @@ button,
   width: 800px;
   padding: 40px;
   padding-top: 30px;
+  border-radius: 8px;
   background-color: #ffffff;
 }
 @media (max-width: 767px) {
@@ -1750,7 +1751,7 @@ button,
       -ms-grid-row-align: center;
       align-self: center;
   padding: 10px 10px;
-  border-radius: 14px;
+  border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
@@ -2604,7 +2605,7 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffffff;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 30px 15px;
   height: 100%;
 }
@@ -2652,7 +2653,7 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #6eacfa;
-  border-radius: 14px;
+  border-radius: 8px;
   padding: 5px 10px;
   margin-bottom: 22px;
   font-size: 12px;
@@ -2920,7 +2921,7 @@ button,
       -ms-grid-row-align: center;
       align-self: center;
   padding: 12px 20px;
-  border-radius: 16px;
+  border-radius: 8px;
   border: 1px solid #5b5b5b;
   background-color: #01aa52;
   font-size: 18px;
@@ -3032,7 +3033,7 @@ button,
       -ms-grid-row-align: center;
       align-self: center;
   padding: 12px 20px;
-  border-radius: 16px;
+  border-radius: 8px;
   border: 1px solid #ffffff;
   background-color: #01aa52;
   font-size: 18px;
@@ -3139,7 +3140,7 @@ button,
       -ms-grid-row-align: center;
       align-self: center;
   padding: 12px 20px;
-  border-radius: 16px;
+  border-radius: 8px;
   border: 1px solid #5b5b5b;
   background-color: #01aa52;
   font-size: 18px;
@@ -3489,7 +3490,7 @@ button,
       -ms-grid-row-align: center;
       align-self: center;
   padding: 12px 20px;
-  border-radius: 16px;
+  border-radius: 8px;
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
