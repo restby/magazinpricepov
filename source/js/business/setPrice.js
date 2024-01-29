@@ -1,22 +1,22 @@
 const setDefaultPrice = () => {
-  const defaultPriceSum = document.querySelectorAll(
-      '.modal__price-sum'
-  );
-  // const yoomoneyFormPriceInputs = document.querySelectorAll(
-  //     '.yoomoney-form__price-input'
+  // const defaultPriceSum = document.querySelectorAll(
+  //     '.modal__price-sum'
   // );
+  const yoomoneyFormPriceInputs = document.querySelectorAll(
+      '.yoomoney-form__price-input'
+  );
 
   const pricesDefault = document.querySelectorAll(
       '.modal__tabs-control.is-active'
   );
-  pricesDefault.forEach((priceDefault, index) => {
-    const priceValue = priceDefault.getAttribute('data-price');
-    defaultPriceSum[index].textContent = `Цена: ${priceValue}`;
-  });
   // pricesDefault.forEach((priceDefault, index) => {
   //   const priceValue = priceDefault.getAttribute('data-price');
-  //   yoomoneyFormPriceInputs[index].value = priceValue;
+  //   defaultPriceSum[index].textContent = `Цена: ${priceValue}`;
   // });
+  pricesDefault.forEach((priceDefault, index) => {
+    const priceValue = priceDefault.getAttribute('data-price');
+    yoomoneyFormPriceInputs[index].value = priceValue;
+  });
 };
 
 const setPrice = () => {
@@ -26,16 +26,16 @@ const setPrice = () => {
   modals.forEach(function (modal) {
     // Получаем элементы DOM внутри каждого модального окна
     const buttons = modal.querySelectorAll('.item-config');
-    // const priceInput = modal.querySelector('.yoomoney-form__price-input');
-    const priceSum = modal.querySelector('.modal__price-sum');
+    const priceInput = modal.querySelector('.yoomoney-form__price-input');
+    // const priceSum = modal.querySelector('.modal__price-sum');
 
     // Обработчик события клика на кнопке
     function handleButtonClick(event) {
       // Получаем значение атрибута data-price
       const price = event.currentTarget.getAttribute('data-price');
-      // priceInput.value = price;
+      priceInput.value = price;
 
-      priceSum.textContent = `Цена: ${price}`;
+      // priceSum.textContent = `Цена: ${price}`;
     }
 
     // Добавляем обработчик события клика на каждую кнопку в текущем модальном окне
