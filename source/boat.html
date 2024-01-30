@@ -254,17 +254,13 @@
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
-          <div class="modal__container">
+          <div class="modal__container item-card">
             <div class="modal__tabs" data-tabs="parent" data-delay="300">
-
               <div class="modal__tabs-controls">
-                <button class="modal__tabs-control is-active item-config" type="button" data-tabs="control" data-price="1926.27">Без колес</button>
-                <button class="modal__tabs-control item-config" type="button" data-tabs="control" data-price="2232.27">2 колеса
-                  R13</button>
+                <button class="modal__tabs-control is-active item-config" type="button" data-tabs="control">Фото: 1</button>
+                <button class="modal__tabs-control item-config" type="button" data-tabs="control">Фото: 2</button>
               </div>
-
               <div class="modal__tabs-content" data-tabs="content">
-
                 <div class="modal__tabs-element" data-tabs="element">
                   <div class="modal__img-container">
                     <picture>
@@ -273,7 +269,6 @@
                     </picture>
                   </div>
                 </div>
-
                 <div class="modal__tabs-element" data-tabs="element">
                   <div class="modal__img-container">
                     <picture>
@@ -282,11 +277,17 @@
                     </picture>
                   </div>
                 </div>
-
               </div>
             </div>
             <div class="modal__info">
-              <h3>Титан Лодочный-2 5.0</h3>
+              <h3 class="modal__info-title">Титан Лодочный-2 5.0</h3>
+              <div class="modal__config config">
+                <p class="config__title">Выберите комплектацию:</p>
+                <div class="config__btn-group">
+                  <button class="config__btn is-active" data-price="1926.27">Без колес</button>
+                  <button class="config__btn" data-price="2232.27">2 колеса R13</button>
+                </div>
+              </div>
               <!-- <div class="modal__price-row">
                 <span class="modal__price-sum">0</span>
                 <button class="modal__price-pay" type="button">Оформить</button>
@@ -294,8 +295,16 @@
 
               <!-- start you-kassa -->
               <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
+
+                <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
+                    <div class="yoomoney-form__pay-row">
+                      <span>Цена: </span>
+                        <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any" readonly>
+                        <span>BYN</span>
+                    </div>
+                </div>
                 <div class="ym-customer-info yoomoney-form__info">
-                  <h2 class="ym-block-title yoomoney-form__text">Введите ваши данные</h2>
+                  <p class="ym-block-title yoomoney-form__text">Введите ваши данные</p>
                   <div class="yoomoney-form__row">
                     <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email" placeholder="Email" type="text" value="" required>
                     <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone" placeholder="Телефон" type="text" value="" required>
@@ -304,23 +313,15 @@
                     <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails" placeholder="Комментарий" value=""></textarea>
                   </div>
                 </div>
-                <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                    <div class="ym-input-icon-rub">
-                        <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any" readonly>
-                    </div>
+                <input name="shopId" type="hidden" value="278539">
                     <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
                       <span class="ym-text-crop">Оплатить</span>
                       <span class="ym-price-output"></span>
                     </button>
-                </div>
-                <input name="shopId" type="hidden" value="278539">
               </form>
               <!-- end you-kassa -->
 
-              <div class="modal__price-descr">
-                <p>Также осуществляем доставку и&nbsp;по&nbsp;территории&nbsp;РБ.</p>
-              </div>
-
+              <p class="modal__price-descr">Также осуществляем доставку и&nbsp;по&nbsp;территории&nbsp;РБ.</p>
               <table class="info">
                 <caption>Основные характеристики</caption>
                 <tr>
@@ -409,22 +410,6 @@
                   <td>Нет</td>
                 </tr>
               </table>
-
-              <table class="price-table">
-                <caption>Таблица цен в зависимости от комплектации</caption>
-                <tr>
-                  <th colspan="2">Cтупица 2хВАЗ-2108(4*98)</th>
-                </tr>
-                <tr>
-                  <td>Без колес</td>
-                  <td>2 колеса R13</td>
-                </tr>
-                <tr>
-                  <td>1926,27 BYN
-                  </td>
-                  <td>2232,27 BYN</td>
-                </tr>
-              </table>
             </div>
           </div>
         </div>
@@ -442,14 +427,11 @@
           </button>
           <div class="modal__container">
             <div class="modal__tabs" data-tabs="parent" data-delay="300">
-
               <div class="modal__tabs-controls">
-                <button class="modal__tabs-control is-active item-config" type="button" data-tabs="control" data-price="1697,79">Без колес</button>
-                <button class="modal__tabs-control item-config" type="button" data-tabs="control" data-price="2003,79">2 колеса
-                  R13</button>
+                <button class="modal__tabs-control is-active item-config" type="button" data-tabs="control">Фото: 1</button>
+                <button class="modal__tabs-control item-config" type="button" data-tabs="control">Фото: 2</button>
               </div>
               <div class="modal__tabs-content" data-tabs="content">
-
                 <div class="modal__tabs-element" data-tabs="element">
                   <div class="modal__img-container">
                     <picture>
@@ -458,7 +440,6 @@
                     </picture>
                   </div>
                 </div>
-
                 <div class="modal__tabs-element" data-tabs="element">
                   <div class="modal__img-container">
                     <picture>
@@ -467,12 +448,17 @@
                     </picture>
                   </div>
                 </div>
-
               </div>
             </div>
-
             <div class="modal__info">
-              <h3>Титан Лодочный-1 4.3</h3>
+              <h3 class="modal__info-title">Титан Лодочный-1 4.3</h3>
+              <div class="modal__config config">
+                <p class="config__title">Выберите комплектацию:</p>
+                <div class="config__btn-group">
+                <button class="config__btn is-active" data-price="1697.79">Без колес</button>
+                <button class="config__btn" data-price="2003.79">2 колеса R13</button>
+                </div>
+              </div>
               <!-- <div class="modal__price-row">
                 <span class="modal__price-sum">0</span>
                 <button class="modal__price-pay" type="button">Оформить</button>
@@ -480,8 +466,15 @@
 
               <!-- start you-kassa -->
               <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
+                <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
+                    <div class="yoomoney-form__pay-row">
+                      <span>Цена: </span>
+                        <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any" readonly>
+                        <span>BYN</span>
+                    </div>
+                </div>
                 <div class="ym-customer-info yoomoney-form__info">
-                  <h2 class="ym-block-title yoomoney-form__text">Введите ваши данные</h2>
+                  <p class="ym-block-title yoomoney-form__text">Введите ваши данные</p>
                   <div class="yoomoney-form__row">
                     <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email" placeholder="Email" type="text" value="" required>
                     <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone" placeholder="Телефон" type="text" value="" required>
@@ -490,38 +483,15 @@
                     <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails" placeholder="Комментарий" value=""></textarea>
                   </div>
                 </div>
-                <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                    <div class="ym-input-icon-rub">
-                        <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any" readonly>
-                    </div>
+                <input name="shopId" type="hidden" value="278539">
                     <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
                       <span class="ym-text-crop">Оплатить</span>
                       <span class="ym-price-output"></span>
                     </button>
-                </div>
-                <input name="shopId" type="hidden" value="278539">
               </form>
               <!-- end you-kassa -->
 
-              <div class="modal__price-descr">
-                <p>Также осуществляем доставку и&nbsp;по&nbsp;территории&nbsp;РБ.</p>
-              </div>
-
-              <!-- <table class="price-table">
-                <caption>Таблица цен в зависимости от комплектации</caption>
-                <tr>
-                  <th colspan="2">Cтупица 2хНИВА(5*139.7)</th>
-                </tr>
-                <tr>
-                  <td>Без колес</td>
-                </tr>
-                <tr>
-                  <td><span>48300<svg width="10" height="18">
-                        <use href="img/sprite.svg#icon-rouble"></use>
-                      </svg></span></td>
-                </tr>
-              </table> -->
-
+              <p class="modal__price-descr">Также осуществляем доставку и&nbsp;по&nbsp;территории&nbsp;РБ.</p>
               <table class="info">
                 <caption>Основные характеристики</caption>
                 <tr>
@@ -610,21 +580,6 @@
                   <td>Нет</td>
                 </tr>
               </table>
-              <table class="price-table">
-                <caption>Таблица цен в зависимости от комплектации</caption>
-                <tr>
-                  <th colspan="2">Cтупица 2хВАЗ-2108(4*98)</th>
-                </tr>
-                <tr>
-                  <td>Без колес</td>
-                  <td>2 колеса R13</td>
-                </tr>
-                <tr>
-                  <td>1697,79 BYN
-                  </td>
-                  <td>2003,79 BYN</td>
-                </tr>
-              </table>
             </div>
           </div>
         </div>
@@ -642,15 +597,11 @@
           </button>
           <div class="modal__container">
             <div class="modal__tabs" data-tabs="parent" data-delay="300">
-
               <div class="modal__tabs-controls">
-                <button class="modal__tabs-control is-active item-config" type="button" data-tabs="control" data-price="1900,77">Без колес</button>
-                <button class="modal__tabs-control item-config" type="button" data-tabs="control" data-price="2206,77">2 колеса
-                  R13</button>
+                <button class="modal__tabs-control is-active item-config" type="button" data-tabs="control">Фото: 1</button>
+                <button class="modal__tabs-control item-config" type="button" data-tabs="control">Фото: 2</button>
               </div>
-
               <div class="modal__tabs-content" data-tabs="content">
-
                 <div class="modal__tabs-element" data-tabs="element">
                   <div class="modal__img-container">
                     <picture>
@@ -659,7 +610,6 @@
                     </picture>
                   </div>
                 </div>
-
                 <div class="modal__tabs-element" data-tabs="element">
                   <div class="modal__img-container">
                     <picture>
@@ -668,12 +618,18 @@
                     </picture>
                   </div>
                 </div>
-
               </div>
             </div>
 
             <div class="modal__info">
-              <h3>Титан Лодочный-2 4.0 (Гидроцикл)</h3>
+              <h3 class="modal__info-title">Титан Лодочный-2 4.0 (Гидроцикл)</h3>
+              <div class="modal__config config">
+                <p class="config__title">Выберите комплектацию:</p>
+                <div class="config__btn-group">
+                  <button class="config__btn is-active" data-price="1900.77">Без колес</button>
+                  <button class="config__btn" data-price="2206.77">2 колеса R13</button>
+                </div>
+              </div>
               <!-- <div class="modal__price-row">
                 <span class="modal__price-sum">0</span>
                 <button class="modal__price-pay" type="button">Оформить</button>
@@ -681,8 +637,16 @@
 
               <!-- start you-kassa -->
               <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
+
+                <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
+                    <div class="yoomoney-form__pay-row">
+                      <span>Цена: </span>
+                        <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any" readonly>
+                        <span>BYN</span>
+                    </div>
+                </div>
                 <div class="ym-customer-info yoomoney-form__info">
-                  <h2 class="ym-block-title yoomoney-form__text">Введите ваши данные</h2>
+                  <p class="ym-block-title yoomoney-form__text">Введите ваши данные</p>
                   <div class="yoomoney-form__row">
                     <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email" placeholder="Email" type="text" value="" required>
                     <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone" placeholder="Телефон" type="text" value="" required>
@@ -691,38 +655,15 @@
                     <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails" placeholder="Комментарий" value=""></textarea>
                   </div>
                 </div>
-                <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                    <div class="ym-input-icon-rub">
-                        <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any" readonly>
-                    </div>
+                <input name="shopId" type="hidden" value="278539">
                     <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
                       <span class="ym-text-crop">Оплатить</span>
                       <span class="ym-price-output"></span>
                     </button>
-                </div>
-                <input name="shopId" type="hidden" value="278539">
               </form>
               <!-- end you-kassa -->
 
-              <div class="modal__price-descr">
-                <p>Также осуществляем доставку и&nbsp;по&nbsp;территории&nbsp;РБ.</p>
-              </div>
-
-              <!-- <table class="price-table">
-                <caption>Таблица цен в зависимости от комплектации</caption>
-                <tr>
-                  <th colspan="2">Cтупица 2хНИВА(5*139.7)</th>
-                </tr>
-                <tr>
-                  <td>Без колес</td>
-                </tr>
-                <tr>
-                  <td><span>53200<svg width="10" height="18">
-                        <use href="img/sprite.svg#icon-rouble"></use>
-                      </svg></span></td>
-                </tr>
-              </table> -->
-
+              <p class="modal__price-descr">Также осуществляем доставку и&nbsp;по&nbsp;территории&nbsp;РБ.</p>
               <table class="info">
                 <caption>Основные характеристики</caption>
                 <tr>
@@ -809,21 +750,6 @@
                 <tr>
                   <td>Функция самосвала</td>
                   <td>Нет</td>
-                </tr>
-              </table>
-              <table class="price-table">
-                <caption>Таблица цен в зависимости от комплектации</caption>
-                <tr>
-                  <th colspan="2">Cтупица 2хВАЗ-2108(4*98)</th>
-                </tr>
-                <tr>
-                  <td>Без колес</td>
-                  <td>2 колеса R13</td>
-                </tr>
-                <tr>
-                  <td>1900,77 BYN
-                  </td>
-                  <td>2206,77 BYN</td>
                 </tr>
               </table>
             </div>

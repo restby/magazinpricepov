@@ -2,22 +2,20 @@
   margin-bottom: 20px;
 }
 .yoomoney-form__text {
+  margin-top: 0;
   font-size: 18px;
 }
 .yoomoney-form__row {
-  // display: flex;
-  // justify-content: space-between;
-  // flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
-  row-gap: 20px;
+  row-gap: 14px;
   margin-bottom: 20px;
+   @include vp-767 {
+        grid-template-columns: 1fr;
+      }
 }
 .yoomoney-form__input {
-//   width: 100%;
-//   max-width: 48%;
-//   row-gap: 20px;
   border: 1px solid #5b5b5b;
   padding: 5px;
   font-style: normal;
@@ -36,26 +34,31 @@
 }
 .yoomoney-form__input--text {
 }
+.yoomoney-form__pay-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  & span:first-child {
+    margin-right: 10px;
+  }
+}
 .yoomoney-form__price-input {
-  border: 1px solid #5b5b5b;
-  padding: 5px;
+  max-width: 76px;
+  width: auto;
+  border: none;
+  padding: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
   color: #5b5b5b;
-  margin-bottom: 20px;
 }
 .yoomoney-form__button {
-  align-self: center;
-  padding: 10px 10px;
+  padding: 8px;
   border-radius: 8px;
-  // border: 1px solid $color-default-dark;
-  // background-color: $color-default-green;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
-  // color: $text-light;
   color: $text-action;
   background-color: $color-default-white;
   border: 1px solid $color-default-green;
@@ -65,9 +68,6 @@
     background-color: $color-default-green;
     border: 1px solid $color-default-dark;
   cursor: pointer;
-
-  // @include vp-1199 {
-  // }
 
   @include vp-767 {
     width: 60%;

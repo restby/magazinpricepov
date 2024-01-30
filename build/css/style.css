@@ -1668,8 +1668,8 @@ button,
 .modal__content {
   position: relative;
   width: 800px;
-  padding: 40px;
-  padding-top: 30px;
+  padding: 30px;
+  padding-top: 20px;
   border-radius: 8px;
   background-color: #ffffff;
 }
@@ -1721,7 +1721,7 @@ button,
 }
 
 .modal__tabs-controls {
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1750,11 +1750,11 @@ button,
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 10px 10px;
+  padding: 8px 8px;
   border-radius: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
   color: #01aa52;
   background-color: #ffffff;
   border: 1px solid #01aa52;
@@ -1912,6 +1912,10 @@ button,
   }
 }
 
+.modal__info-title {
+  margin-top: 0;
+}
+
 .modal__descr p {
   margin: 0;
   margin-bottom: 40px;
@@ -1930,7 +1934,7 @@ button,
 
 .modal__price-descr p {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   line-height: 120%;
 }
 @media (max-width: 1199px) {
@@ -3572,6 +3576,133 @@ button,
   cursor: pointer;
 }
 
+.config {
+  margin-bottom: 20px;
+}
+
+.config__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.config__btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  row-gap: 16px;
+}
+
+.config__btn {
+  width: auto;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #01aa52;
+  background-color: #ffffff;
+  border: 1px solid #01aa52;
+  text-transform: lowercase;
+  -webkit-transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .config__btn:hover:not(.focus-visible) {
+    outline: none;
+    color: #f6f5f5;
+    background-color: #01aa52;
+    border: 1px solid #5b5b5b;
+  }
+  .config__btn:hover:not(.focus-visible):active {
+    opacity: 0.7;
+  }
+}
+.config__btn.focus-visible:focus {
+  outline: none;
+  color: #f6f5f5;
+  background-color: #01aa52;
+  border: 1px solid #5b5b5b;
+}
+.config__btn.focus-visible:focus:active {
+  opacity: 0.7;
+}
+.config__btn--disabled {
+  color: #5b5b5b;
+  pointer-events: none;
+  background: rgba(2, 102, 193, 0.1);
+}
+.config__btn.is-active {
+  color: #f6f5f5;
+  background-color: #01aa52;
+  border: 1px solid #5b5b5b;
+}
+
+.config__input-label {
+  margin-right: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 6px 6px;
+  border-radius: 8px;
+}
+@media (hover: hover) {
+  .config__input-label:hover:not(.focus-visible) {
+    outline: none;
+    color: #f6f5f5;
+    background-color: #01aa52;
+    border: 1px solid #5b5b5b;
+  }
+  .config__input-label:hover:not(.focus-visible):active {
+    opacity: 0.7;
+  }
+}
+.config__input-label.focus-visible:focus {
+  outline: none;
+  color: #f6f5f5;
+  background-color: #01aa52;
+  border: 1px solid #5b5b5b;
+}
+.config__input-label.focus-visible:focus:active {
+  opacity: 0.7;
+}
+
+.config__input {
+  padding: 10px 10px;
+  border-radius: 8px;
+  -webkit-transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .config__input {
+    width: 60%;
+  }
+}
+.config__input--disabled {
+  color: #5b5b5b;
+  pointer-events: none;
+  background: rgba(2, 102, 193, 0.1);
+}
+.config__input.is-active {
+  color: #f6f5f5;
+  background-color: #01aa52;
+  border: 1px solid #5b5b5b;
+}
+
 .payment__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3718,6 +3849,7 @@ button,
 }
 
 .yoomoney-form__text {
+  margin-top: 0;
   font-size: 18px;
 }
 
@@ -3729,8 +3861,14 @@ button,
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
-  row-gap: 20px;
+  row-gap: 14px;
   margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .yoomoney-form__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
 .yoomoney-form__input {
@@ -3743,22 +3881,33 @@ button,
   color: #5b5b5b;
 }
 
+.yoomoney-form__pay-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.yoomoney-form__pay-row span:first-child {
+  margin-right: 10px;
+}
+
 .yoomoney-form__price-input {
-  border: 1px solid #5b5b5b;
-  padding: 5px;
+  max-width: 76px;
+  width: auto;
+  border: none;
+  padding: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
   color: #5b5b5b;
-  margin-bottom: 20px;
 }
 
 .yoomoney-form__button {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding: 10px 10px;
+  padding: 8px;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;

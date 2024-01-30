@@ -1,0 +1,109 @@
+.config{
+  margin-bottom: 20px;
+}
+
+.config__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.config__btn-group {
+display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+.config__btn {
+  width: auto;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: $text-action;
+  background-color: $color-default-white;
+  border: 1px solid $color-default-green;
+  text-transform: lowercase;
+  transition: border-color $trans-default, background-color $trans-default, color $trans-default;
+  cursor: pointer;
+
+  @include hover-focus {
+    outline: none;
+    color: $text-light;
+    background-color: $color-default-green;
+    border: 1px solid $color-default-dark;
+
+    @include active {
+      opacity: 0.7;
+    }
+  }
+
+  &--disabled {
+    color: $text-dark;
+    pointer-events: none;
+    background: rgba(2, 102, 193, 0.1);
+  }
+
+  &.is-active {
+    color: $text-light;
+    background-color: $color-default-green;
+    border: 1px solid $color-default-dark;
+  }
+}
+
+.config__input-label {
+  margin-right: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: inherit;
+  border: 1px solid $color-transparent;
+  padding: 6px 6px;
+  border-radius: 8px;
+
+  @include hover-focus {
+    outline: none;
+    color: $text-light;
+    background-color: $color-default-green;
+    border: 1px solid $color-default-dark;
+
+    @include active {
+      opacity: 0.7;
+    }
+  }
+}
+.config__input {
+  padding: 10px 10px;
+  border-radius: 8px;
+  // border: 1px solid $color-default-dark;
+  // background-color: $color-default-green;
+
+  // color: $text-light;
+
+  transition: border-color $trans-default, background-color $trans-default, color $trans-default;
+  cursor: pointer;
+
+  // @include vp-1199 {
+  // }
+
+  @include vp-767 {
+    width: 60%;
+  }
+
+  &--disabled {
+    color: $text-dark;
+    pointer-events: none;
+    background: rgba(2, 102, 193, 0.1);
+  }
+
+  &.is-active {
+    color: $text-light;
+    background-color: $color-default-green;
+    border: 1px solid $color-default-dark;
+  }
+}
