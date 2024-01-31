@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {initUniaxialSlider} from './modules/initUniaxialSlider';
 import {initBiaxialSlider} from './modules/initBiaxialSlider';
 import {initBoatSlider} from './modules/initBoatSlider';
+import {initModalSlider} from './modules/initModalSlider';
 import {initTabs} from './modules/tabs/init-tabs';
 import {Burger} from './modules/header/burger';
 import {setDefaultPrice, setPrice} from './business/setPrice';
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initUniaxialSlider();
     initBiaxialSlider();
     initBoatSlider();
+    initModalSlider();
     setDefaultPrice();
     setPrice();
   });

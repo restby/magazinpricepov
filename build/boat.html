@@ -1,768 +1,939 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Автоприцепы для водной техники">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon/icon-logo.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicon/apple-icon.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#00FF76">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#00FF76">
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" crossorigin="anonymous">
-    <title>Прицепы для водной техники</title>
-    <!-- yookassa -->
-    <!-- <link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css"> -->
-    <!-- yookassa -->
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Автоприцепы для водной техники" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="favicon/icon-logo.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicon/apple-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#00FF76" />
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#00FF76" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" crossorigin="anonymous" />
+  <title>Прицепы для водной техники</title>
+  <!-- yookassa -->
+  <!-- <link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css"> -->
+  <!-- yookassa -->
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
 
-  <body>
-    <div class="wrapper webp">
-      <header class="page-header" data-header-element>
-        <div class="page-header__container" data-header>
-          <div class="container">
-            <div class="page-header__wrapper">
-              <button class="page-header__burger" type="button" aria-label="Переключатель отображения меню."
-                aria-pressed="false" data-burger>
-                <svg class="page-header__burger-icon page-header__burger-icon--open" width="26" height="26"
-                  aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-menu"></use>
+<body>
+  <div class="wrapper webp">
+    <header class="page-header" data-header-element>
+      <div class="page-header__container" data-header>
+        <div class="container">
+          <div class="page-header__wrapper">
+            <button class="page-header__burger" type="button" aria-label="Переключатель отображения меню."
+              aria-pressed="false" data-burger>
+              <svg class="page-header__burger-icon page-header__burger-icon--open" width="26" height="26"
+                aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-menu"></use>
+              </svg>
+              <svg class="page-header__burger-icon page-header__burger-icon--close" width="22" height="22"
+                aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="page-header__logo logo logo--header">
+              <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
+                <svg width="113" height="43">
+                  <use href="img/sprite.svg#icon-logo-dark"></use>
                 </svg>
-                <svg class="page-header__burger-icon page-header__burger-icon--close" width="22" height="22"
-                  aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-close"></use>
-                </svg>
-              </button>
-              <div class="page-header__logo logo logo--header">
-                <h1 class="visually-hidden">Легковые автоприцепы</h1>
-                <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
-                  <svg width="113" height="43">
-                    <use href="img/sprite.svg#icon-logo-dark"></use>
-                  </svg>
-                </a>
-              </div>
-              <nav class="page-header__nav nav nav--header" data-nav-header>
-                <ul class="page-header__list nav__list nav__list--header">
-                  <li class="page-header__item nav__item">
-                    <a class="page-header__link nav__link" href="index.html" data-link-menu>Главная</a>
-                  </li>
-                  <li class="page-header__item nav__item">
-                    <a class="page-header__link nav__link" href="uniaxial.html" data-link-menu>Одноосные прицепы</a>
-                  </li>
-                  <li class="page-header__item nav__item">
-                    <a class="page-header__link nav__link" href="biaxial.html" data-link-menu>Двухосные прицепы</a>
-                  </li>
-                  <li class="page-header__item nav__item">
-                    <a class="page-header__link nav__link" data-link-menu>Прицепы для водной
-                      техники</a>
-                  </li>
-                  <!-- <li class="page-header__item nav__item">
+              </a>
+            </div>
+            <nav class="page-header__nav nav nav--header" data-nav-header>
+              <ul class="page-header__list nav__list nav__list--header">
+                <li class="page-header__item nav__item">
+                  <a class="page-header__link nav__link" href="index.html" data-link-menu>
+                    Главная
+                  </a>
+                </li>
+                <li class="page-header__item nav__item">
+                  <a class="page-header__link nav__link" href="uniaxial.html" data-link-menu>
+                    Одноосные прицепы
+                  </a>
+                </li>
+                <li class="page-header__item nav__item">
+                  <a class="page-header__link nav__link" href="biaxial.html" data-link-menu>
+                    Двухосные прицепы
+                  </a>
+                </li>
+                <li class="page-header__item nav__item">
+                  <a class="page-header__link nav__link" data-link-menu>
+                    Прицепы для водной техники
+                  </a>
+                </li>
+                <!-- <li class="page-header__item nav__item">
                           <a class="page-header__link nav__link" href="#contacts" data-link-menu>Контакты</a>
                         </li>
                         <li class="page-header__item nav__item">
                           <a class="page-header__link nav__link" href="#reviews" data-link-menu>Отзывы</a>
                         </li> -->
-                </ul>
-              </nav>
-              <div class="page-header__phone">
-                <a class="page-header__link page-header__link--phone" href="tel:+79206691969">+7 (920) 669-19-69</a>
-                <a class="page-header__link page-header__link--phone" href="tel:375295944261">+375(29)594-42-61</a>
+              </ul>
+            </nav>
+            <div class="page-header__phone">
+              <a class="page-header__link page-header__link--phone" href="tel:+79206691969">
+                +7 (920) 669-19-69
+              </a>
+              <a class="page-header__link page-header__link--phone" href="tel:375295944261">
+                +375(29)594-42-61
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="boat-catalog catalog">
+        <div class="container" data-height="max">
+          <div class="catalog__wrapper">
+            <h1 class="catalog__title section-title">
+              Прицепы для водной техники
+            </h1>
+
+            <div class="catalog__element" data-catalog__element>
+              <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-t-l-250" data-item="tl250">
+                <div class="slide__container">
+                  <div class="slide__img-container">
+                    <div class="slide__mark slide__mark--in-stock">
+                      В&nbsp;наличии
+                    </div>
+                    <picture>
+                      <source type="image/webp" srcset="img/items/1L-00/1l-250-00.webp" />
+                      <img width="400" height="200" loading="lazy" src="img/items/1L-00/1l-250-00.jpg"
+                        alt="Титан Лодочный-2 5.0." />
+                    </picture>
+                  </div>
+                  <div class="slide__content">
+                    <h3 class="slide__title">Титан Лодочный-2 5.0</h3>
+                    <span class="slide__price">Цена от: 1926,27 BYN</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-t-l-143" data-item="tl143">
+                <div class="slide__container">
+                  <div class="slide__img-container">
+                    <div class="slide__mark slide__mark--to-order">
+                      Под заказ
+                    </div>
+                    <picture>
+                      <source type="image/webp" srcset="img/items/1L-00/1l-143-00.webp" />
+                      <img width="400" height="200" loading="lazy" src="img/items/1L-00/1l-143-00.jpg"
+                        alt="Титан Лодочный-1 4.3." />
+                    </picture>
+                  </div>
+                  <div class="slide__content">
+                    <h3 class="slide__title">Титан Лодочный-1 4.3</h3>
+                    <span class="slide__price">Цена от: 1697,79 BYN</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-t-l-240" data-item="tl240">
+                <div class="slide__container">
+                  <div class="slide__img-container">
+                    <div class="slide__mark slide__mark--to-order">
+                      Под заказ
+                    </div>
+                    <picture>
+                      <source type="image/webp" srcset="img/items/1L-00/1l-240-00.webp" />
+                      <img width="400" height="200" loading="lazy" src="img/items/1L-00/1l-240-00.jpg"
+                        alt="Титан Лодочный-2 4.0 (Гидроцикл)." />
+                    </picture>
+                  </div>
+                  <div class="slide__content">
+                    <h3 class="slide__title">
+                      Титан Лодочный-2 4.0 (Гидроцикл)
+                    </h3>
+                    <span class="slide__price">Цена от: 1900,77 BYN</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
-      <main>
-        <section class="boat-catalog catalog">
+      </section>
 
-          <div class="container" data-height="max">
-            <div class="catalog__wrapper">
-              <h1 class="catalog__title section-title">Прицепы для водной техники</h1>
-
-              <div class="catalog__element" data-catalog__element>
-
-                <!-- <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-card" data-item="test">
-                  <div class="slide__container">
-                    <div class="slide__img-container">
-                      <div class="slide__mark slide__mark--in-stock">В&nbsp;наличии</div>
-                      <picture>
-                        <source type="image/webp" srcset="img/items/1L-00/1l-250-00.webp">
-                        <img width="400" height="200" loading="lazy" src="img/items/1L-00/1l-250-00.jpg"
-                          alt="Титан Лодочный-2 5.0.">
-                      </picture>
-                    </div>
-                    <div class="slide__content">
-                      <h3 class="slide__title">Титан Лодочный-2 5.0</h3>
-                      <span class="slide__price">Цена от: 1926,27 BYN</span>
-                    </div>
-                  </div>
-                </div> -->
-
-                <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-t-l-250" data-item="tl250">
-                  <div class="slide__container">
-                    <div class="slide__img-container">
-                      <div class="slide__mark slide__mark--in-stock">В&nbsp;наличии</div>
-                      <picture>
-                        <source type="image/webp" srcset="img/items/1L-00/1l-250-00.webp">
-                        <img width="400" height="200" loading="lazy" src="img/items/1L-00/1l-250-00.jpg"
-                          alt="Титан Лодочный-2 5.0.">
-                      </picture>
-                    </div>
-                    <div class="slide__content">
-                      <h3 class="slide__title">Титан Лодочный-2 5.0</h3>
-                      <span class="slide__price">Цена от: 1926,27 BYN</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-t-l-143" data-item="tl143">
-                  <div class="slide__container">
-                    <div class="slide__img-container">
-                      <div class="slide__mark slide__mark--to-order">Под заказ</div>
-                      <picture>
-                        <source type="image/webp" srcset="img/items/1L-00/1l-143-00.webp">
-                        <img width="400" height="200" loading="lazy" src="img/items/1L-00/1l-143-00.jpg"
-                          alt="Титан Лодочный-1 4.3.">
-                      </picture>
-                    </div>
-                    <div class="slide__content">
-                      <h3 class="slide__title">Титан Лодочный-1 4.3</h3>
-                      <span class="slide__price">Цена от: 1697,79 BYN</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="catalog__tabs-slide slide" tabindex="0" data-open-modal="item-t-l-240" data-item="tl240">
-                  <div class="slide__container">
-                    <div class="slide__img-container">
-                      <div class="slide__mark slide__mark--to-order">Под заказ</div>
-                      <picture>
-                        <source type="image/webp" srcset="img/items/1L-00/1l-240-00.webp">
-                        <img width="400" height="200" loading="lazy" src="img/items/1L-00/1l-240-00.jpg"
-                          alt="Титан Лодочный-2 4.0 (Гидроцикл).">
-                      </picture>
-                    </div>
-                    <div class="slide__content">
-                      <h3 class="slide__title">Титан Лодочный-2 4.0 (Гидроцикл)</h3>
-                      <span class="slide__price">Цена от: 1900,77 BYN</span>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
+      <section class="contacts">
+        <div class="container contacts__container">
+          <h2 class="contacts__tilte section-title">Наши контакты</h2>
+          <div class="contacts__info">
+            <div class="contacts__col">
+              <a href="tel:+79206691969">
+                <svg width="48" height="48">
+                  <use href="img/sprite.svg#icon-phone"></use>
+                </svg>
+                +7 (920) 669-19-69
+              </a>
             </div>
-          </div>
-
-
-        </section>
-
-        <section class="contacts">
-          <div class="container contacts__container">
-            <h2 class="contacts__tilte section-title">Наши контакты</h2>
-            <div class="contacts__info">
-              <div class="contacts__col">
-                <a href="tel:+79206691969"><svg width="48" height="48">
-                    <use href="img/sprite.svg#icon-phone"></use>
-                  </svg>+7 (920) 669-19-69</a>
-              </div>
-              <div class="contacts__col">
-                <a href="tel:+375295944261"><svg width="48" height="48">
-                    <use href="img/sprite.svg#icon-phone"></use>
-                  </svg>+375(29)594 42 61</a>
-              </div>
-              <div class="contacts__col">
-                <a href="mailto:prichapi@yandex.ru">
-                  <svg width="52" height="52">
-                    <use href="img/sprite.svg#icon-mail"></use>
-                  </svg>prichapi@yandex.ru</a>
-              </div>
-              <div class="contacts__col">
-                <a href="viber://chat?number=%2B375295944261"><svg width="52" height="52">
-                    <use href="img/sprite.svg#icon-viber"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="contacts__col">
-                <a href="https://api.whatsapp.com/send/?phone=375295944261"><svg width="52" height="52">
-                    <use href="img/sprite.svg#icon-whatsapp"></use>
-                  </svg>
-                </a></a>
-              </div>
+            <div class="contacts__col">
+              <a href="tel:+375295944261">
+                <svg width="48" height="48">
+                  <use href="img/sprite.svg#icon-phone"></use>
+                </svg>
+                +375(29)594 42 61
+              </a>
             </div>
-            <!-- <div class="contacts__map map">
-                              <div class="map__wrapper"><img src="" alt=""></div>
-                            </div>
-                          </div> -->
-        </section>
-
-      </main>
-      <footer class="page-footer">
-        <div class="container page-footer__container">
-          <div class="page-footer__wrapper">
-            <div class="page-footer__logo logo logo--footer">
-              <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
-                <svg width="205" height="62">
-                  <use href="img/sprite.svg#icon-logo-dark"></use>
+            <div class="contacts__col">
+              <a href="mailto:prichapi@yandex.ru">
+                <svg width="52" height="52">
+                  <use href="img/sprite.svg#icon-mail"></use>
+                </svg>
+                prichapi@yandex.ru
+              </a>
+            </div>
+            <div class="contacts__col">
+              <a href="viber://chat?number=%2B375295944261">
+                <svg width="52" height="52">
+                  <use href="img/sprite.svg#icon-viber"></use>
                 </svg>
               </a>
             </div>
-            <nav class="page-footer__nav nav nav--footer">
-              <ul class="page-footer__list nav__list nav__list--footer">
-                <li class="page-footer__item nav__item">
-                  <a class="page-footer__link nav__link" href="index.html" data-link-menu>Главная</a>
-                </li>
-                <li class="page-footer__item nav__item">
-                  <a class="page-footer__link nav__link" href="uniaxial.html">Одноосные прицепы</a>
-                </li>
-                <li class="page-footer__item nav__item">
-                  <a class="page-footer__link nav__link" href="biaxial.html" data-link-menu>Двухосные прицепы</a>
-                </li>
-                <li class="page-footer__item nav__item">
-                  <a class="page-footer__link nav__link" href="boat.html" data-link-menu>Прицепы для водной
-                    техники</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="page-footer__about about">
-              <p>ИП&nbsp;Трубчик Анатолий Миронович</p>
-              <p> ИНН 672609854490, ОГРНИП 322673300021844</p>
-              <p>Почтовый адрес 215523, Смоленская область, д.Пушкино, Сафоновский р-он, ул. Пролетарская, дом&nbsp;29,
-                кв. 12</p>
-              <p><span>Телефон: <a href="tel:+79206691969">+7 (920) 669-19-69</a><br></p>
-              <p>Почта: <a href="mailto:trubchikanatoly@yandex.by">trubchikanatoly@yandex.by</a></p>
+            <div class="contacts__col">
+              <a href="https://api.whatsapp.com/send/?phone=375295944261">
+                <svg width="52" height="52">
+                  <use href="img/sprite.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
             </div>
           </div>
+          <!-- <div class="contacts__map map">
+                              <div class="map__wrapper"><img src="" alt=""></div>
+                            </div> -->
         </div>
-      </footer>
-      <div class="overlay" data-overlay></div>
-    </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container page-footer__container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo logo logo--footer">
+            <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
+              <svg width="205" height="62">
+                <use href="img/sprite.svg#icon-logo-dark"></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="page-footer__nav nav nav--footer">
+            <ul class="page-footer__list nav__list nav__list--footer">
+              <li class="page-footer__item nav__item">
+                <a class="page-footer__link nav__link" href="index.html" data-link-menu>
+                  Главная
+                </a>
+              </li>
+              <li class="page-footer__item nav__item">
+                <a class="page-footer__link nav__link" href="uniaxial.html">
+                  Одноосные прицепы
+                </a>
+              </li>
+              <li class="page-footer__item nav__item">
+                <a class="page-footer__link nav__link" href="biaxial.html" data-link-menu>
+                  Двухосные прицепы
+                </a>
+              </li>
+              <li class="page-footer__item nav__item">
+                <a class="page-footer__link nav__link" href="boat.html" data-link-menu>
+                  Прицепы для водной техники
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="page-footer__about about">
+            <p>ИП&nbsp;Трубчик Анатолий Миронович</p>
+            <p>ИНН 672609854490, ОГРНИП 322673300021844</p>
+            <p>
+              Почтовый адрес 215523, Смоленская область, д.Пушкино,
+              Сафоновский р-он, ул. Пролетарская, дом&nbsp;29, кв. 12
+            </p>
+            <p>
+              <span>Телефон:</span>
+              <a href="tel:+79206691969">+7 (920) 669-19-69</a>
+              <br />
+            </p>
+            <p>
+              Почта:
+              <a href="mailto:trubchikanatoly@yandex.by">
+                trubchikanatoly@yandex.by
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay" data-overlay></div>
+  </div>
 
-    <div class="modal modal--preload" data-modal="item-t-l-250">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-          <div class="modal__container item-card">
-            <div class="modal__tabs" data-tabs="parent" data-delay="300">
-              <div class="modal__tabs-controls">
-                <button class="modal__tabs-control is-active item-config" type="button" data-tabs="control">Фото: 1</button>
-                <button class="modal__tabs-control item-config" type="button" data-tabs="control">Фото: 2</button>
-              </div>
-              <div class="modal__tabs-content" data-tabs="content">
-                <div class="modal__tabs-element" data-tabs="element">
-                  <div class="modal__img-container">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-250-00.webp">
-                      <img src="img/items/1L-00/1l-250-00.jpg" alt="Титан Лодочный-2 5.0, фото без колес">
-                    </picture>
-                  </div>
+  <div class="modal modal--preload" data-modal="item-t-l-250">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal__container item-card">
+          <!-- <div class="modal__tabs" data-tabs="parent" data-delay="300">
+            <div class="modal__tabs-controls">
+              <button class="modal__tabs-control is-active item-config" type="button" data-tabs="control">
+                Без колес
+              </button>
+              <button class="modal__tabs-control item-config" type="button" data-tabs="control">
+                2 колеса R13
+              </button>
+            </div>
+            <div class="modal__tabs-content" data-tabs="content">
+              <div class="modal__tabs-element" data-tabs="element">
+                <div class="modal__img-container">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-250-00.webp" />
+                    <img src="img/items/1L-00/1l-250-00.jpg" alt="Титан Лодочный-2 5.0, фото без колес" />
+                  </picture>
                 </div>
-                <div class="modal__tabs-element" data-tabs="element">
-                  <div class="modal__img-container">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-250-01.webp">
-                      <img src="img/items/1L-00/1l-250-01.jpg" alt="Титан Лодочный-2 5.0, фото с колесами">
-                    </picture>
-                  </div>
+              </div>
+              <div class="modal__tabs-element" data-tabs="element">
+                <div class="modal__img-container">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-250-01.webp" />
+                    <img src="img/items/1L-00/1l-250-01.jpg" alt="Титан Лодочный-2 5.0, фото с колесами" />
+                  </picture>
                 </div>
               </div>
             </div>
-            <div class="modal__info">
-              <h3 class="modal__info-title">Титан Лодочный-2 5.0</h3>
-              <div class="modal__config config">
-                <p class="config__title">Выберите комплектацию:</p>
-                <div class="config__btn-group">
-                  <button class="config__btn is-active" data-price="1926.27">Без колес</button>
-                  <button class="config__btn" data-price="2232.27">2 колеса R13</button>
+          </div> -->
+          <div class="modal__slider-container">
+            <div class="swiper" data-modal-slider>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide__container modal__container">
+                    <div class="slide__img-container">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-250-00.webp" />
+                        <img src="img/items/1L-00/1l-250-00.jpg" alt="Титан Лодочный-2 5.0, фото без колес" />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide__container">
+                    <div class="slide__img-container modal__container">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-250-01.webp" />
+                        <img src="img/items/1L-00/1l-250-01.jpg" alt="Титан Лодочный-2 5.0, фото с колесами" />
+                      </picture>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- <div class="modal__price-row">
+              <div class="modal-slider__btns slider-btns">
+                <button
+                  class="modal-slider__arrow modal-slider__arrow--prev slider-btns__arrow slider-btns__arrow--prev swiper-arrow swiper-button-prev"
+                  data-modal-slider__arrow--prev type="button" aria-label="Предыдущий слайд."><svg width="16"
+                    height="32">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg></button>
+                <button
+                  class="modal-slider__arrow modal-slider__arrow--next slider-btns__arrow slider-btns__arrow--next swiper-arrow swiper-button-next"
+                  type="button" aria-label="Следующий слайд." data-modal-slider__arrow--next><svg width="16"
+                    height="32">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal__info">
+            <h3 class="modal__info-title">Титан Лодочный-2 5.0</h3>
+            <div class="modal__config config">
+              <p class="config__title">Выберите комплектацию:</p>
+              <div class="config__btn-group">
+                <button class="config__btn is-active" data-price="1926.27">
+                  Без колес
+                </button>
+                <button class="config__btn" data-price="2232.27">
+                  2 колеса R13
+                </button>
+              </div>
+            </div>
+            <!-- <div class="modal__price-row">
                 <span class="modal__price-sum">0</span>
                 <button class="modal__price-pay" type="button">Оформить</button>
               </div> -->
 
-              <!-- start you-kassa -->
-              <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
-
-                <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                    <div class="yoomoney-form__pay-row">
-                      <span>Цена: </span>
-                        <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any" readonly>
-                        <span>BYN</span>
-                    </div>
+            <!-- start you-kassa -->
+            <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment"
+              method="post" accept-charset="utf-8">
+              <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
+                <div class="yoomoney-form__pay-row">
+                  <span>Цена:</span>
+                  <input name="sum" placeholder="0.00"
+                    class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any"
+                    readonly />
+                  <span>BYN</span>
                 </div>
-                <div class="ym-customer-info yoomoney-form__info">
-                  <p class="ym-block-title yoomoney-form__text">Введите ваши данные</p>
-                  <div class="yoomoney-form__row">
-                    <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email" placeholder="Email" type="text" value="" required>
-                    <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone" placeholder="Телефон" type="text" value="" required>
-                    <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name" placeholder="ФИО" type="text" value="" required>
-                    <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress" placeholder="Адрес" type="text" value="">
-                    <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails" placeholder="Комментарий" value=""></textarea>
-                  </div>
+              </div>
+              <div class="ym-customer-info yoomoney-form__info">
+                <p class="ym-block-title yoomoney-form__text">
+                  Введите ваши данные
+                </p>
+                <div class="yoomoney-form__row">
+                  <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email"
+                    placeholder="Email" type="text" value="" required />
+                  <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone"
+                    placeholder="Телефон" type="text" value="" required />
+                  <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name"
+                    placeholder="ФИО" type="text" value="" required />
+                  <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress"
+                    placeholder="Адрес" type="text" value="" />
+                  <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails"
+                    placeholder="Комментарий"></textarea>
                 </div>
-                <input name="shopId" type="hidden" value="278539">
-                    <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
-                      <span class="ym-text-crop">Оплатить</span>
-                      <span class="ym-price-output"></span>
-                    </button>
-              </form>
-              <!-- end you-kassa -->
+              </div>
+              <input name="shopId" type="hidden" value="278539" />
+              <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
+                <span class="ym-text-crop">Оплатить</span>
+                <span class="ym-price-output"></span>
+              </button>
+            </form>
+            <!-- end you-kassa -->
 
-              <p class="modal__price-descr">Также осуществляем доставку и&nbsp;по&nbsp;территории&nbsp;РБ.</p>
-              <table class="info">
-                <caption>Основные характеристики</caption>
-                <tr>
-                  <td>Габаритные размеры</td>
-                  <td>5380х1770х800, мм</td>
-                </tr>
-                <tr>
-                  <td>Полная грузоподъемность по паспорту</td>
-                  <td>587, кг</td>
-                </tr>
-                <tr>
-                  <td>Снаряженная масса</td>
-                  <td>163, кг</td>
-                </tr>
-                <tr>
-                  <td>Подвеска</td>
-                  <td>Рессорно-амортизаторная подвеска
-                  </td>
-                </tr>
-                <tr>
-                  <td>Кол-во листов рессоры</td>
-                  <td>3, шт
-                  </td>
-                </tr>
-                <tr>
-                  <td>Кол-во осей</td>
-                  <td>1, шт
-                  </td>
-                </tr>
-                <tr>
-                  <td>Нагрузка на одну ось</td>
-                  <td>800, кг
-                  </td>
-                </tr>
-                <tr>
-                  <td>Дорожный просвет</td>
-                  <td>250, мм
-                  </td>
-                </tr>
-                <tr>
-                  <td>Размер колеса для оси ВАЗ</td>
-                  <td>185/70 R13, дюйм
-                  </td>
-                </tr>
-                <!-- <tr>
+            <p class="modal__price-descr">
+              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
+            </p>
+            <table class="info">
+              <caption>Основные характеристики</caption>
+              <tr>
+                <td>Габаритные размеры</td>
+                <td>5380х1770х800, мм</td>
+              </tr>
+              <tr>
+                <td>Полная грузоподъемность по паспорту</td>
+                <td>587, кг</td>
+              </tr>
+              <tr>
+                <td>Снаряженная масса</td>
+                <td>163, кг</td>
+              </tr>
+              <tr>
+                <td>Подвеска</td>
+                <td>Рессорно-амортизаторная подвеска</td>
+              </tr>
+              <tr>
+                <td>Кол-во листов рессоры</td>
+                <td>3, шт</td>
+              </tr>
+              <tr>
+                <td>Кол-во осей</td>
+                <td>1, шт</td>
+              </tr>
+              <tr>
+                <td>Нагрузка на одну ось</td>
+                <td>800, кг</td>
+              </tr>
+              <tr>
+                <td>Дорожный просвет</td>
+                <td>250, мм</td>
+              </tr>
+              <tr>
+                <td>Размер колеса для оси ВАЗ</td>
+                <td>185/70 R13, дюйм</td>
+              </tr>
+              <!-- <tr>
                   <td>Размер колеса для оси НИВА</td>
                   <td>185/75 R16, дюйм
                   </td>
                 </tr> -->
-                <tr>
-                  <td>Нагрузка на сцепное устройство</td>
-                  <td>100, кг
-                  </td>
-                </tr>
-                <tr>
-                  <td>Тип ТСУ</td>
-                  <td>шар ø50,
-                  </td>
-                </tr>
-                <tr>
-                  <td>Лампа фонарей</td>
-                  <td>Лампа накаливания
-                  </td>
-                </tr>
-                <tr>
-                  <td>Тормоз</td>
-                  <td>без тормозной системы
-                  </td>
-                </tr>
-                <tr>
-                  <td>Штекер</td>
-                  <td>вилка фаркопа 7 pin, 12В,
-                  </td>
-                </tr>
-                <tr>
-                  <td>Защитное покрытие</td>
-                  <td>горячее цинкование
-                  </td>
-                </tr>
-                <tr>
-                  <td>Размеры лодки</td>
-                  <td>5000, мм</td>
-                </tr>
-                <tr>
-                  <td>Функция самосвала</td>
-                  <td>Нет</td>
-                </tr>
-              </table>
-            </div>
+              <tr>
+                <td>Нагрузка на сцепное устройство</td>
+                <td>100, кг</td>
+              </tr>
+              <tr>
+                <td>Тип ТСУ</td>
+                <td>шар ø50,</td>
+              </tr>
+              <tr>
+                <td>Лампа фонарей</td>
+                <td>Лампа накаливания</td>
+              </tr>
+              <tr>
+                <td>Тормоз</td>
+                <td>без тормозной системы</td>
+              </tr>
+              <tr>
+                <td>Штекер</td>
+                <td>вилка фаркопа 7 pin, 12В,</td>
+              </tr>
+              <tr>
+                <td>Защитное покрытие</td>
+                <td>горячее цинкование</td>
+              </tr>
+              <tr>
+                <td>Размеры лодки</td>
+                <td>5000, мм</td>
+              </tr>
+              <tr>
+                <td>Функция самосвала</td>
+                <td>Нет</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="modal modal--preload" data-modal="item-t-l-143">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-          <div class="modal__container">
-            <div class="modal__tabs" data-tabs="parent" data-delay="300">
-              <div class="modal__tabs-controls">
-                <button class="modal__tabs-control is-active item-config" type="button" data-tabs="control">Фото: 1</button>
-                <button class="modal__tabs-control item-config" type="button" data-tabs="control">Фото: 2</button>
-              </div>
-              <div class="modal__tabs-content" data-tabs="content">
-                <div class="modal__tabs-element" data-tabs="element">
-                  <div class="modal__img-container">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-143-00.webp">
-                      <img src="img/items/1L-00/1l-143-00.jpg" alt="Титан Лодочный-1 4.3, фото без колес">
-                    </picture>
-                  </div>
+  <div class="modal modal--preload" data-modal="item-t-l-143">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal__container">
+          <!-- <div class="modal__tabs" data-tabs="parent" data-delay="300">
+            <div class="modal__tabs-controls">
+              <button class="modal__tabs-control is-active item-config" type="button" data-tabs="control">
+                Без колес
+              </button>
+              <button class="modal__tabs-control item-config" type="button" data-tabs="control">
+                2 колеса R13
+              </button>
+            </div>
+            <div class="modal__tabs-content" data-tabs="content">
+              <div class="modal__tabs-element" data-tabs="element">
+                <div class="modal__img-container">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-143-00.webp" />
+                    <img src="img/items/1L-00/1l-143-00.jpg" alt="Титан Лодочный-1 4.3, фото без колес" />
+                  </picture>
                 </div>
-                <div class="modal__tabs-element" data-tabs="element">
-                  <div class="modal__img-container">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-143-01.webp">
-                      <img src="img/items/1L-00/1l-143-01.jpg" alt="Титан Лодочный-1 4.3, фото с колесами">
-                    </picture>
-                  </div>
+              </div>
+              <div class="modal__tabs-element" data-tabs="element">
+                <div class="modal__img-container">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-143-01.webp" />
+                    <img src="img/items/1L-00/1l-143-01.jpg" alt="Титан Лодочный-1 4.3, фото с колесами" />
+                  </picture>
                 </div>
               </div>
             </div>
-            <div class="modal__info">
-              <h3 class="modal__info-title">Титан Лодочный-1 4.3</h3>
-              <div class="modal__config config">
-                <p class="config__title">Выберите комплектацию:</p>
-                <div class="config__btn-group">
-                <button class="config__btn is-active" data-price="1697.79">Без колес</button>
-                <button class="config__btn" data-price="2003.79">2 колеса R13</button>
+          </div> -->
+          <div class="modal__slider-container">
+            <div class="swiper" data-modal-slider>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide__container modal__container">
+                    <div class="slide__img-container">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-143-00.webp" />
+                        <img src="img/items/1L-00/1l-143-00.jpg" alt="Титан Лодочный-1 4.3, фото без колес" />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide__container">
+                    <div class="slide__img-container modal__container">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-143-01.webp" />
+                        <img src="img/items/1L-00/1l-143-01.jpg" alt="Титан Лодочный-1 4.3, фото с колесами" />
+                      </picture>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- <div class="modal__price-row">
+              <div class="modal-slider__btns slider-btns">
+                <button
+                  class="modal-slider__arrow modal-slider__arrow--prev slider-btns__arrow slider-btns__arrow--prev swiper-arrow swiper-button-prev"
+                  data-modal-slider__arrow--prev type="button" aria-label="Предыдущий слайд."><svg width="16"
+                    height="32">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg></button>
+                <button
+                  class="modal-slider__arrow modal-slider__arrow--next slider-btns__arrow slider-btns__arrow--next swiper-arrow swiper-button-next"
+                  type="button" aria-label="Следующий слайд." data-modal-slider__arrow--next><svg width="16"
+                    height="32">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="modal__info">
+            <h3 class="modal__info-title">Титан Лодочный-1 4.3</h3>
+            <div class="modal__config config">
+              <p class="config__title">Выберите комплектацию:</p>
+              <div class="config__btn-group">
+                <button class="config__btn is-active" data-price="1697.79">
+                  Без колес
+                </button>
+                <button class="config__btn" data-price="2003.79">
+                  2 колеса R13
+                </button>
+              </div>
+            </div>
+            <!-- <div class="modal__price-row">
                 <span class="modal__price-sum">0</span>
                 <button class="modal__price-pay" type="button">Оформить</button>
               </div> -->
 
-              <!-- start you-kassa -->
-              <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
-                <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                    <div class="yoomoney-form__pay-row">
-                      <span>Цена: </span>
-                        <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any" readonly>
-                        <span>BYN</span>
-                    </div>
+            <!-- start you-kassa -->
+            <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment"
+              method="post" accept-charset="utf-8">
+              <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
+                <div class="yoomoney-form__pay-row">
+                  <span>Цена:</span>
+                  <input name="sum" placeholder="0.00"
+                    class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any"
+                    readonly />
+                  <span>BYN</span>
                 </div>
-                <div class="ym-customer-info yoomoney-form__info">
-                  <p class="ym-block-title yoomoney-form__text">Введите ваши данные</p>
-                  <div class="yoomoney-form__row">
-                    <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email" placeholder="Email" type="text" value="" required>
-                    <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone" placeholder="Телефон" type="text" value="" required>
-                    <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name" placeholder="ФИО" type="text" value="" required>
-                    <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress" placeholder="Адрес" type="text" value="">
-                    <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails" placeholder="Комментарий" value=""></textarea>
-                  </div>
+              </div>
+              <div class="ym-customer-info yoomoney-form__info">
+                <p class="ym-block-title yoomoney-form__text">
+                  Введите ваши данные
+                </p>
+                <div class="yoomoney-form__row">
+                  <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email"
+                    placeholder="Email" type="text" value="" required />
+                  <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone"
+                    placeholder="Телефон" type="text" value="" required />
+                  <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name"
+                    placeholder="ФИО" type="text" value="" required />
+                  <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress"
+                    placeholder="Адрес" type="text" value="" />
+                  <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails"
+                    placeholder="Комментарий"></textarea>
                 </div>
-                <input name="shopId" type="hidden" value="278539">
-                    <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
-                      <span class="ym-text-crop">Оплатить</span>
-                      <span class="ym-price-output"></span>
-                    </button>
-              </form>
-              <!-- end you-kassa -->
+              </div>
+              <input name="shopId" type="hidden" value="278539" />
+              <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
+                <span class="ym-text-crop">Оплатить</span>
+                <span class="ym-price-output"></span>
+              </button>
+            </form>
+            <!-- end you-kassa -->
 
-              <p class="modal__price-descr">Также осуществляем доставку и&nbsp;по&nbsp;территории&nbsp;РБ.</p>
-              <table class="info">
-                <caption>Основные характеристики</caption>
-                <tr>
-                  <td>Габаритные размеры</td>
-                  <td>4200х1770х800, мм</td>
-                </tr>
-                <tr>
-                  <td>Полная грузоподъемность по паспорту</td>
-                  <td>618, кг</td>
-                </tr>
-                <tr>
-                  <td>Снаряженная масса</td>
-                  <td>132, кг</td>
-                </tr>
-                <tr>
-                  <td>Подвеска</td>
-                  <td>Рессорно-амортизаторная подвеска
-                  </td>
-                </tr>
-                <tr>
-                  <td>Кол-во листов рессоры</td>
-                  <td>3, шт
-                  </td>
-                </tr>
-                <tr>
-                  <td>Кол-во осей</td>
-                  <td>1, шт
-                  </td>
-                </tr>
-                <tr>
-                  <td>Нагрузка на одну ось</td>
-                  <td>800, кг
-                  </td>
-                </tr>
-                <tr>
-                  <td>Дорожный просвет</td>
-                  <td>250, мм
-                  </td>
-                </tr>
-                <tr>
-                  <td>Размер колеса для оси ВАЗ</td>
-                  <td>185/70 R13, дюйм
-                  </td>
-                </tr>
-                <!-- <tr>
+            <p class="modal__price-descr">
+              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
+            </p>
+            <table class="info">
+              <caption>Основные характеристики</caption>
+              <tr>
+                <td>Габаритные размеры</td>
+                <td>4200х1770х800, мм</td>
+              </tr>
+              <tr>
+                <td>Полная грузоподъемность по паспорту</td>
+                <td>618, кг</td>
+              </tr>
+              <tr>
+                <td>Снаряженная масса</td>
+                <td>132, кг</td>
+              </tr>
+              <tr>
+                <td>Подвеска</td>
+                <td>Рессорно-амортизаторная подвеска</td>
+              </tr>
+              <tr>
+                <td>Кол-во листов рессоры</td>
+                <td>3, шт</td>
+              </tr>
+              <tr>
+                <td>Кол-во осей</td>
+                <td>1, шт</td>
+              </tr>
+              <tr>
+                <td>Нагрузка на одну ось</td>
+                <td>800, кг</td>
+              </tr>
+              <tr>
+                <td>Дорожный просвет</td>
+                <td>250, мм</td>
+              </tr>
+              <tr>
+                <td>Размер колеса для оси ВАЗ</td>
+                <td>185/70 R13, дюйм</td>
+              </tr>
+              <!-- <tr>
                   <td>Размер колеса для оси НИВА</td>
                   <td>185/75 R16, дюйм
                   </td>
                 </tr> -->
-                <tr>
-                  <td>Нагрузка на сцепное устройство</td>
-                  <td>100, кг
-                  </td>
-                </tr>
-                <tr>
-                  <td>Тип ТСУ</td>
-                  <td>шар ø50,
-                  </td>
-                </tr>
-                <tr>
-                  <td>Лампа фонарей</td>
-                  <td>Лампа накаливания
-                  </td>
-                </tr>
-                <tr>
-                  <td>Тормоз</td>
-                  <td>без тормозной системы
-                  </td>
-                </tr>
-                <tr>
-                  <td>Штекер</td>
-                  <td>вилка фаркопа 7 pin, 12В,
-                  </td>
-                </tr>
-                <tr>
-                  <td>Защитное покрытие</td>
-                  <td>горячее цинкование
-                  </td>
-                </tr>
-                <tr>
-                  <td>Размеры лодки</td>
-                  <td>4300, мм</td>
-                </tr>
-                <tr>
-                  <td>Функция самосвала</td>
-                  <td>Нет</td>
-                </tr>
-              </table>
-            </div>
+              <tr>
+                <td>Нагрузка на сцепное устройство</td>
+                <td>100, кг</td>
+              </tr>
+              <tr>
+                <td>Тип ТСУ</td>
+                <td>шар ø50,</td>
+              </tr>
+              <tr>
+                <td>Лампа фонарей</td>
+                <td>Лампа накаливания</td>
+              </tr>
+              <tr>
+                <td>Тормоз</td>
+                <td>без тормозной системы</td>
+              </tr>
+              <tr>
+                <td>Штекер</td>
+                <td>вилка фаркопа 7 pin, 12В,</td>
+              </tr>
+              <tr>
+                <td>Защитное покрытие</td>
+                <td>горячее цинкование</td>
+              </tr>
+              <tr>
+                <td>Размеры лодки</td>
+                <td>4300, мм</td>
+              </tr>
+              <tr>
+                <td>Функция самосвала</td>
+                <td>Нет</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="modal modal--preload" data-modal="item-t-l-240">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-          <div class="modal__container">
-            <div class="modal__tabs" data-tabs="parent" data-delay="300">
-              <div class="modal__tabs-controls">
-                <button class="modal__tabs-control is-active item-config" type="button" data-tabs="control">Фото: 1</button>
-                <button class="modal__tabs-control item-config" type="button" data-tabs="control">Фото: 2</button>
-              </div>
-              <div class="modal__tabs-content" data-tabs="content">
-                <div class="modal__tabs-element" data-tabs="element">
-                  <div class="modal__img-container">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-240-00.webp">
-                      <img src="img/items/1L-00/1l-240-00.jpg" alt="Титан Лодочный-2 4.0 (Гидроцикл), фото без колес">
-                    </picture>
-                  </div>
+  <div class="modal modal--preload" data-modal="item-t-l-240">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal__container">
+          <!-- <div class="modal__tabs" data-tabs="parent" data-delay="300">
+            <div class="modal__tabs-controls">
+              <button class="modal__tabs-control is-active item-config" type="button" data-tabs="control">
+                Без колес
+              </button>
+              <button class="modal__tabs-control item-config" type="button" data-tabs="control">
+                2 колеса R13
+              </button>
+            </div>
+            <div class="modal__tabs-content" data-tabs="content">
+              <div class="modal__tabs-element" data-tabs="element">
+                <div class="modal__img-container">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-240-00.webp" />
+                    <img src="img/items/1L-00/1l-240-00.jpg" alt="Титан Лодочный-2 4.0 (Гидроцикл), фото без колес" />
+                  </picture>
                 </div>
-                <div class="modal__tabs-element" data-tabs="element">
-                  <div class="modal__img-container">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-240-01.webp">
-                      <img src="img/items/1L-00/1l-240-01.jpg" alt="Титан Лодочный-2 4.0 (Гидроцикл), фото с колесами">
-                    </picture>
-                  </div>
+              </div>
+              <div class="modal__tabs-element" data-tabs="element">
+                <div class="modal__img-container">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-240-01.webp" />
+                    <img src="img/items/1L-00/1l-240-01.jpg" alt="Титан Лодочный-2 4.0 (Гидроцикл), фото с колесами" />
+                  </picture>
                 </div>
               </div>
             </div>
-
-            <div class="modal__info">
-              <h3 class="modal__info-title">Титан Лодочный-2 4.0 (Гидроцикл)</h3>
-              <div class="modal__config config">
-                <p class="config__title">Выберите комплектацию:</p>
-                <div class="config__btn-group">
-                  <button class="config__btn is-active" data-price="1900.77">Без колес</button>
-                  <button class="config__btn" data-price="2206.77">2 колеса R13</button>
+          </div> -->
+          <div class="modal__slider-container">
+            <div class="swiper" data-modal-slider>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide__container modal__container">
+                    <div class="slide__img-container">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-240-00.webp" />
+                        <img src="img/items/1L-00/1l-240-00.jpg"
+                          alt="Титан Лодочный-2 4.0 (Гидроцикл), фото без колес" />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide__container">
+                    <div class="slide__img-container modal__container">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1199px)" srcset="img/items/1L-00/1l-240-01.webp" />
+                        <img src="img/items/1L-00/1l-240-01.jpg"
+                          alt="Титан Лодочный-2 4.0 (Гидроцикл), фото с колесами" />
+                      </picture>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- <div class="modal__price-row">
+              <div class="modal-slider__btns slider-btns">
+                <button
+                  class="modal-slider__arrow modal-slider__arrow--prev slider-btns__arrow slider-btns__arrow--prev swiper-arrow swiper-button-prev"
+                  data-modal-slider__arrow--prev type="button" aria-label="Предыдущий слайд."><svg width="16"
+                    height="32">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg></button>
+                <button
+                  class="modal-slider__arrow modal-slider__arrow--next slider-btns__arrow slider-btns__arrow--next swiper-arrow swiper-button-next"
+                  type="button" aria-label="Следующий слайд." data-modal-slider__arrow--next><svg width="16"
+                    height="32">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="modal__info">
+            <h3 class="modal__info-title">
+              Титан Лодочный-2 4.0 (Гидроцикл)
+            </h3>
+            <div class="modal__config config">
+              <p class="config__title">Выберите комплектацию:</p>
+              <div class="config__btn-group">
+                <button class="config__btn is-active" data-price="1900.77">
+                  Без колес
+                </button>
+                <button class="config__btn" data-price="2206.77">
+                  2 колеса R13
+                </button>
+              </div>
+            </div>
+            <!-- <div class="modal__price-row">
                 <span class="modal__price-sum">0</span>
                 <button class="modal__price-pay" type="button">Оформить</button>
               </div> -->
 
-              <!-- start you-kassa -->
-              <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
-
-                <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                    <div class="yoomoney-form__pay-row">
-                      <span>Цена: </span>
-                        <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any" readonly>
-                        <span>BYN</span>
-                    </div>
+            <!-- start you-kassa -->
+            <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment"
+              method="post" accept-charset="utf-8">
+              <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
+                <div class="yoomoney-form__pay-row">
+                  <span>Цена:</span>
+                  <input name="sum" placeholder="0.00"
+                    class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any"
+                    readonly />
+                  <span>BYN</span>
                 </div>
-                <div class="ym-customer-info yoomoney-form__info">
-                  <p class="ym-block-title yoomoney-form__text">Введите ваши данные</p>
-                  <div class="yoomoney-form__row">
-                    <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email" placeholder="Email" type="text" value="" required>
-                    <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone" placeholder="Телефон" type="text" value="" required>
-                    <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name" placeholder="ФИО" type="text" value="" required>
-                    <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress" placeholder="Адрес" type="text" value="">
-                    <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails" placeholder="Комментарий" value=""></textarea>
-                  </div>
+              </div>
+              <div class="ym-customer-info yoomoney-form__info">
+                <p class="ym-block-title yoomoney-form__text">
+                  Введите ваши данные
+                </p>
+                <div class="yoomoney-form__row">
+                  <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email"
+                    placeholder="Email" type="text" value="" required />
+                  <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone"
+                    placeholder="Телефон" type="text" value="" required />
+                  <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name"
+                    placeholder="ФИО" type="text" value="" required />
+                  <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress"
+                    placeholder="Адрес" type="text" value="" />
+                  <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails"
+                    placeholder="Комментарий"></textarea>
                 </div>
-                <input name="shopId" type="hidden" value="278539">
-                    <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
-                      <span class="ym-text-crop">Оплатить</span>
-                      <span class="ym-price-output"></span>
-                    </button>
-              </form>
-              <!-- end you-kassa -->
+              </div>
+              <input name="shopId" type="hidden" value="278539" />
+              <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
+                <span class="ym-text-crop">Оплатить</span>
+                <span class="ym-price-output"></span>
+              </button>
+            </form>
+            <!-- end you-kassa -->
 
-              <p class="modal__price-descr">Также осуществляем доставку и&nbsp;по&nbsp;территории&nbsp;РБ.</p>
-              <table class="info">
-                <caption>Основные характеристики</caption>
-                <tr>
-                  <td>Габаритные размеры</td>
-                  <td>4380х1770х800, мм</td>
-                </tr>
-                <tr>
-                  <td>Полная грузоподъемность по паспорту</td>
-                  <td>595, кг</td>
-                </tr>
-                <tr>
-                  <td>Снаряженная масса</td>
-                  <td>157, кг</td>
-                </tr>
-                <tr>
-                  <td>Подвеска</td>
-                  <td>Рессорно-амортизаторная подвеска
-                  </td>
-                </tr>
-                <tr>
-                  <td>Кол-во листов рессоры</td>
-                  <td>3, шт
-                  </td>
-                </tr>
-                <tr>
-                  <td>Кол-во осей</td>
-                  <td>1, шт
-                  </td>
-                </tr>
-                <tr>
-                  <td>Нагрузка на одну ось</td>
-                  <td>800, кг
-                  </td>
-                </tr>
-                <tr>
-                  <td>Дорожный просвет</td>
-                  <td>250, мм
-                  </td>
-                </tr>
-                <tr>
-                  <td>Размер колеса для оси ВАЗ</td>
-                  <td>185/70 R13, дюйм
-                  </td>
-                </tr>
-                <!-- <tr>
+            <p class="modal__price-descr">
+              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
+            </p>
+            <table class="info">
+              <caption>Основные характеристики</caption>
+              <tr>
+                <td>Габаритные размеры</td>
+                <td>4380х1770х800, мм</td>
+              </tr>
+              <tr>
+                <td>Полная грузоподъемность по паспорту</td>
+                <td>595, кг</td>
+              </tr>
+              <tr>
+                <td>Снаряженная масса</td>
+                <td>157, кг</td>
+              </tr>
+              <tr>
+                <td>Подвеска</td>
+                <td>Рессорно-амортизаторная подвеска</td>
+              </tr>
+              <tr>
+                <td>Кол-во листов рессоры</td>
+                <td>3, шт</td>
+              </tr>
+              <tr>
+                <td>Кол-во осей</td>
+                <td>1, шт</td>
+              </tr>
+              <tr>
+                <td>Нагрузка на одну ось</td>
+                <td>800, кг</td>
+              </tr>
+              <tr>
+                <td>Дорожный просвет</td>
+                <td>250, мм</td>
+              </tr>
+              <tr>
+                <td>Размер колеса для оси ВАЗ</td>
+                <td>185/70 R13, дюйм</td>
+              </tr>
+              <!-- <tr>
                   <td>Размер колеса для оси НИВА</td>
                   <td>185/75 R16, дюйм
                   </td>
                 </tr> -->
-                <tr>
-                  <td>Нагрузка на сцепное устройство</td>
-                  <td>100, кг
-                  </td>
-                </tr>
-                <tr>
-                  <td>Тип ТСУ</td>
-                  <td>шар ø50,
-                  </td>
-                </tr>
-                <tr>
-                  <td>Лампа фонарей</td>
-                  <td>Лампа накаливания
-                  </td>
-                </tr>
-                <tr>
-                  <td>Тормоз</td>
-                  <td>без тормозной системы
-                  </td>
-                </tr>
-                <tr>
-                  <td>Штекер</td>
-                  <td>вилка фаркопа 7 pin, 12В,
-                  </td>
-                </tr>
-                <tr>
-                  <td>Защитное покрытие</td>
-                  <td>горячее цинкование
-                  </td>
-                </tr>
-                <tr>
-                  <td>Размеры лодки</td>
-                  <td>4000, мм</td>
-                </tr>
-                <tr>
-                  <td>Функция самосвала</td>
-                  <td>Нет</td>
-                </tr>
-              </table>
-            </div>
+              <tr>
+                <td>Нагрузка на сцепное устройство</td>
+                <td>100, кг</td>
+              </tr>
+              <tr>
+                <td>Тип ТСУ</td>
+                <td>шар ø50,</td>
+              </tr>
+              <tr>
+                <td>Лампа фонарей</td>
+                <td>Лампа накаливания</td>
+              </tr>
+              <tr>
+                <td>Тормоз</td>
+                <td>без тормозной системы</td>
+              </tr>
+              <tr>
+                <td>Штекер</td>
+                <td>вилка фаркопа 7 pin, 12В,</td>
+              </tr>
+              <tr>
+                <td>Защитное покрытие</td>
+                <td>горячее цинкование</td>
+              </tr>
+              <tr>
+                <td>Размеры лодки</td>
+                <td>4000, мм</td>
+              </tr>
+              <tr>
+                <td>Функция самосвала</td>
+                <td>Нет</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- yookassa -->
-    <script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js"></script>
-    <!-- yookassa -->
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <!-- yookassa -->
+  <script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js"></script>
+  <!-- yookassa -->
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
 
 </html>

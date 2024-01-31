@@ -1,8 +1,8 @@
 const setDefaultPrice = () => {
   if (document.querySelectorAll('.modal')) {
     // const defaultPriceSum = document.querySelectorAll(
-  //     '.modal__price-sum'
-  // );
+    //     '.modal__price-sum'
+    // );
     const yoomoneyFormPriceInputs = document.querySelectorAll(
         '.yoomoney-form__price-input'
     );
@@ -26,18 +26,18 @@ const setPrice = () => {
     const modals = document.querySelectorAll('.modal');
     // Перебираем каждое модальное окно
     modals.forEach(function (modal) {
-    // Получаем элементы DOM внутри каждого модального окна
+      // Получаем элементы DOM внутри каждого модального окна
       const buttons = modal.querySelectorAll('.item-config');
       const priceInput = modal.querySelector('.yoomoney-form__price-input');
       // const priceSum = modal.querySelector('.modal__price-sum');
 
       // Обработчик события клика на кнопке
       function handleButtonClick(event) {
-      // Получаем значение атрибута data-price
+        // Получаем значение атрибута data-price
         const price = event.currentTarget.getAttribute('data-price');
         priceInput.value = price;
 
-      // priceSum.textContent = `Цена: ${price}`;
+        // priceSum.textContent = `Цена: ${price}`;
       }
 
       // Добавляем обработчик события клика на каждую кнопку в текущем модальном окне

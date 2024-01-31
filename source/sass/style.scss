@@ -1,61 +1,59 @@
 // Vendor
 // ---------------------------------
 
-@import "vendor/normalize";
+@import 'vendor/normalize';
 // Swiper 8.4.7
-@import "vendor/swiper";
+@import 'vendor/swiper';
 
 //Modules
 // ---------------------------------
-@import "modules/data-tabs";
-@import "modules/tabs";
-
+@import 'modules/data-tabs';
+@import 'modules/tabs';
 
 // Global
 // ---------------------------------
 
-@import "variables";
-@import "mixins";
-@import "global/fonts";
-@import "global/reboot";
-@import "global/utils";
-@import "global/container";
+@import 'variables';
+@import 'mixins';
+@import 'global/fonts';
+@import 'global/reboot';
+@import 'global/utils';
+@import 'global/container';
 
 // Blocks
 // ---------------------------------
-@import "blocks/modal";
 // @import "blocks/custom-input";
 // @import "blocks/custom-toggle";
 // @import "blocks/custom-select";
-@import "blocks/btn";
-@import "blocks/section-title";
-@import "blocks/section-descr.scss";
-@import "blocks/page-header";
-@import "blocks/logo";
-@import "blocks/nav";
-@import "blocks/promo";
-@import "blocks/slide";
-@import "blocks/slider-btns";
-@import "blocks/uniaxial";
-@import "blocks/biaxial";
-@import "blocks/boat";
-@import "blocks/contacts";
-@import "blocks/map";
-@import "blocks/page-footer";
-@import "blocks/about";
-@import "blocks/catalog";
-@import "blocks/config";
-@import "blocks/payment";
+@import 'blocks/btn';
+@import 'blocks/section-title';
+@import 'blocks/section-descr.scss';
+@import 'blocks/page-header';
+@import 'blocks/logo';
+@import 'blocks/nav';
+@import 'blocks/promo';
+@import 'blocks/slide';
+@import 'blocks/slider-btns';
+@import 'blocks/uniaxial';
+@import 'blocks/biaxial';
+@import 'blocks/boat';
+@import 'blocks/contacts';
+@import 'blocks/map';
+@import 'blocks/page-footer';
+@import 'blocks/about';
+@import 'blocks/catalog';
+@import 'blocks/config';
+@import 'blocks/payment';
+@import 'blocks/modal';
 
 // Pages
 //---------------------------------
-@import "blocks/uniaxial-catalog";
-@import "blocks/biaxial-catalog";
-@import "blocks/boat-catalog";
+@import 'blocks/uniaxial-catalog';
+@import 'blocks/biaxial-catalog';
+@import 'blocks/boat-catalog';
 
 // other styles
-@import "blocks/yooumoney-stiles";
-
+@import 'blocks/yooumoney-stiles';
 
 // ---------------------------------
 
