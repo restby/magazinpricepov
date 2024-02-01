@@ -8,7 +8,8 @@ const setDefaultPrice = () => {
     );
     pricesDefault.forEach((priceDefault, index) => {
       const priceValue = priceDefault.getAttribute('data-price');
-      yoomoneyFormPriceInputs[index].value = priceValue;
+      const numericValue = parseFloat(priceValue.replace(',', '.'));
+      yoomoneyFormPriceInputs[index].value = isNaN(numericValue) ? '' : numericValue;
     });
   }
 };
@@ -51,7 +52,8 @@ const setPrice = () => {
         });
         // Получаем значение атрибута data-price
         const price = event.currentTarget.getAttribute('data-price');
-        priceInput.value = price;
+        const numericValue = parseFloat(price.replace(',', '.'));
+        priceInput.value = isNaN(numericValue) ? '' : numericValue;
       }
 
       // Добавляем обработчик события клика на каждую кнопку в текущем модальном окне
