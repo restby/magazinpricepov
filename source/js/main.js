@@ -7,6 +7,7 @@ import {initModalSlider} from './modules/initModalSlider';
 import {initTabs} from './modules/tabs/init-tabs';
 import {Burger} from './modules/header/burger';
 import {setDefaultPrice, setPrice} from './business/setPrice';
+import {setOrderData, getOrderData} from './business/initOrder';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -30,6 +31,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initModalSlider();
     setDefaultPrice();
     setPrice();
+    setOrderData();
+    getOrderData();
   });
 });
 

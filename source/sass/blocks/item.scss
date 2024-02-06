@@ -1,0 +1,52 @@
+.item {
+}
+.item__text {
+}
+.item__info {
+}
+.item__title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.item__pay-row {
+  margin-bottom: 20px;
+}
+.item__small-text {
+}
+.item__price-input {
+  background-color: $color-transparent;
+  max-width: 78px;
+  width: auto;
+  border: none;
+  border: 1px dashed red;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #5b5b5b;
+}
+.item__count-row {
+  margin-bottom: 8px;
+}
+.item-label {
+}
+.item__count-input {
+  background-color: $color-transparent;
+  max-width: 76px;
+  width: auto;
+  border: none;
+  border: 1px dashed red;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #5b5b5b;
+}
+.item__control {
+  &--plus {
+  }
+  &--minus {
+  }
+}

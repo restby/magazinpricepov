@@ -343,61 +343,38 @@
             </div>
           </div>
           <div class="modal__info">
-            <h3 class="modal__info-title">Титан 2ос.2515-03</h3>
+            <h3 class="modal__info-title" data-item-title>Титан 2ос.2515-03</h3>
             <p class="modal__descr">Размер кузова 2,5 метра в&nbsp;длину и&nbsp;1,5 метра в&nbsp;ширину.</p>
+
             <div class="modal__config config">
               <p class="config__title">Выберите комплектацию:</p>
               <div class="config__btn-group">
-                <button class="config__btn is-active" data-price="2923,32">Без колес без Тента</button>
-                <button class="config__btn" data-price="3797,97">Без колес Тент H1220</button>
-                <button class="config__btn" data-price="3743,40">Без колес Тент H1220C</button>
-                <button class="config__btn" data-price="3535,32">с колесами без Тента</button>
-                <button class="config__btn" data-price="4409,97">с колесами Тент H1220</button>
-                <button class="config__btn" data-price="4355,40">с колесами Тент H1220C</button>
+                <button class="config__btn is-active" data-price="2923,32">
+                  Без колес без Тента
+                </button>
+                <button class="config__btn" data-price="3797,97">
+                  Без колес Тент H1220
+                </button>
+                <button class="config__btn" data-price="3743,40">
+                  Без колес Тент H1220C
+                </button>
+                <button class="config__btn" data-price="3535,32">
+                  с колесами без Тента
+                </button>
+                <button class="config__btn" data-price="4409,97">
+                  с колесами Тент H1220
+                </button>
+                <button class="config__btn" data-price="4355,40">
+                  с колесами Тент H1220C
+                </button>
               </div>
             </div>
-            <!-- <div class="modal__price-row">
-                    <span class="modal__price-sum">0</span>
-                    <button class="modal__price-pay" type="button">Оформить</button>
-                  </div> -->
 
-            <!-- start you-kassa -->
-            <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment"
-              method="post" accept-charset="utf-8">
+            <div class="modal__price-row">
+              <span>Цена: </span><span class="modal__price-sum" data-price-input>0</span><span> BYN</span>
+              <a class="modal__price-pay btn" href="payment.html">Оформить</a>
+            </div>
 
-              <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                <div class="yoomoney-form__pay-row">
-                  <span>Цена: </span>
-                  <input name="sum" placeholder="0.00"
-                    class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any"
-                    readonly>
-                  <span>BYN</span>
-                </div>
-              </div>
-              <div class="ym-customer-info yoomoney-form__info">
-                <p class="ym-block-title yoomoney-form__text">Введите ваши данные</p>
-                <div class="yoomoney-form__row">
-                  <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email"
-                    placeholder="Email" type="text" value="" required>
-                  <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone"
-                    placeholder="Телефон" type="text" value="" required>
-                  <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name"
-                    placeholder="ФИО" type="text" value="" required>
-                  <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress"
-                    placeholder="Адрес" type="text" value="">
-                  <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails"
-                    placeholder="Комментарий"></textarea>
-                </div>
-              </div>
-              <input name="shopId" type="hidden" value="278539">
-              <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
-                <span class="ym-text-crop">Оплатить</span>
-                <span class="ym-price-output"></span>
-              </button>
-            </form>
-            <!-- end you-kassa -->
-
-            <p class="modal__price-descr">Также осуществляем доставку по&nbsp;территории&nbsp;РБ.</p>
             <table class="info">
               <caption>Основные характеристики</caption>
               <tr>
@@ -490,32 +467,9 @@
                 <td>Нет</td>
               </tr>
             </table>
-            <table class="price-table">
-              <caption>Таблица цен в зависимости от комплектации</caption>
-              <tr>
-                <th rowspan="2">Тенты</th>
-                <th colspan="2">Cтупица ВАЗ-2108(4*98)</th>
-              </tr>
-              <tr>
-                <td>Без колес</td>
-                <td>с колесами</td>
-              </tr>
-              <tr>
-                <td>Нет</td>
-                <td>2923,32 BYN</td>
-                <td>3535,32 BYN</td>
-              </tr>
-              <tr>
-                <td>H1220</td>
-                <td>3797,97 BYN</td>
-                <td>4409,97 BYN</td>
-              </tr>
-              <tr>
-                <td>H1220C</td>
-                <td>3743,4 BYN</td>
-                <td>4355,4 BYN</td>
-              </tr>
-            </table>
+            <small class="modal__price-descr">
+              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
+            </small>
           </div>
         </div>
       </div>
@@ -595,61 +549,38 @@
             </div>
           </div>
           <div class="modal__info">
-            <h3 class="modal__info-title">Титан 2ос.3015-03</h3>
+            <h3 class="modal__info-title" data-item-title>Титан 2ос.3015-03</h3>
             <p class="modal__descr">Размер кузова 3,0 метра в&nbsp;длину и&nbsp;1,5 метра в&nbsp;ширину.</p>
+
             <div class="modal__config config">
               <p class="config__title">Выберите комплектацию:</p>
               <div class="config__btn-group">
-                <button class="config__btn is-active" data-price="3139,05">Без колес без Тента</button>
-                <button class="config__btn" data-price="4033,08">Без колес Тент H1220</button>
-                <button class="config__btn" data-price="3959,13">Без колес Тент H1220C</button>
-                <button class="config__btn" data-price="3751,05">с колесами без Тента</button>
-                <button class="config__btn" data-price="4645,08">с колесами Тент H1220</button>
-                <button class="config__btn" data-price="4571,13">с колесами Тент H1220C</button>
+                <button class="config__btn is-active" data-price="3139,05">
+                  Без колес без Тента
+                </button>
+                <button class="config__btn" data-price="4033,08">
+                  Без колес Тент H1220
+                </button>
+                <button class="config__btn" data-price="3959,13">
+                  Без колес Тент H1220C
+                </button>
+                <button class="config__btn" data-price="3751,05">
+                  с колесами без Тента
+                </button>
+                <button class="config__btn" data-price="4645,08">
+                  с колесами Тент H1220
+                </button>
+                <button class="config__btn" data-price="4571,13">
+                  с колесами Тент H1220C
+                </button>
               </div>
             </div>
-            <!-- <div class="modal__price-row">
-                                <span class="modal__price-sum">0</span>
-                                <button class="modal__price-pay" type="button">Оформить</button>
-                              </div> -->
 
-            <!-- start you-kassa -->
-            <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment"
-              method="post" accept-charset="utf-8">
+            <div class="modal__price-row">
+              <span>Цена: </span><span class="modal__price-sum" data-price-input>0</span><span> BYN</span>
+              <a class="modal__price-pay btn" href="payment.html">Оформить</a>
+            </div>
 
-              <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                <div class="yoomoney-form__pay-row">
-                  <span>Цена: </span>
-                  <input name="sum" placeholder="0.00"
-                    class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any"
-                    readonly>
-                  <span>BYN</span>
-                </div>
-              </div>
-              <div class="ym-customer-info yoomoney-form__info">
-                <p class="ym-block-title yoomoney-form__text">Введите ваши данные</p>
-                <div class="yoomoney-form__row">
-                  <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email"
-                    placeholder="Email" type="text" value="" required>
-                  <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone"
-                    placeholder="Телефон" type="text" value="" required>
-                  <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name"
-                    placeholder="ФИО" type="text" value="" required>
-                  <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress"
-                    placeholder="Адрес" type="text" value="">
-                  <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails"
-                    placeholder="Комментарий"></textarea>
-                </div>
-              </div>
-              <input name="shopId" type="hidden" value="278539">
-              <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
-                <span class="ym-text-crop">Оплатить</span>
-                <span class="ym-price-output"></span>
-              </button>
-            </form>
-            <!-- end you-kassa -->
-
-            <p class="modal__price-descr">Также осуществляем доставку по&nbsp;территории&nbsp;РБ.</p>
             <table class="info">
               <caption>Основные характеристики</caption>
               <tr>
@@ -741,6 +672,9 @@
                 <td>Нет</td>
               </tr>
             </table>
+            <small class="modal__price-descr">
+              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
+            </small>
           </div>
         </div>
       </div>
@@ -820,61 +754,38 @@
             </div>
           </div>
           <div class="modal__info">
-            <h3 class="modal__info-title">Титан 2ос.3515-03</h3>
+            <h3 class="modal__info-title" data-item-title>Титан 2ос.3515-03</h3>
             <p class="modal__descr">Размер кузова 3,5 метра в&nbsp;длину и&nbsp;1,5 метра в&nbsp;ширину.</p>
+
             <div class="modal__config config">
               <p class="config__title">Выберите комплектацию:</p>
               <div class="config__btn-group">
-                <button class="config__btn is-active" data-price="3247,17">Без колес без Тента</button>
-                <button class="config__btn" data-price="4181,49">Без колес Тент H1220</button>
-                <button class="config__btn" data-price="4145,28">Без колес Тент H1220C</button>
-                <button class="config__btn" data-price="3859,17">с колесами без Тента</button>
-                <button class="config__btn" data-price="4793,49">с колесами Тент H1220</button>
-                <button class="config__btn" data-price="4757,28">с колесами Тент H1220C</button>
+                <button class="config__btn is-active" data-price="3247,17">
+                  Без колес без Тента
+                </button>
+                <button class="config__btn" data-price="4181,49">
+                  Без колес Тент H1220
+                </button>
+                <button class="config__btn" data-price="4145,28">
+                  Без колес Тент H1220C
+                </button>
+                <button class="config__btn" data-price="3859,17">
+                  с колесами без Тента
+                </button>
+                <button class="config__btn" data-price="4793,49">
+                  с колесами Тент H1220
+                </button>
+                <button class="config__btn" data-price="4757,28">
+                  с колесами Тент H1220C
+                </button>
               </div>
             </div>
-            <!-- <div class="modal__price-row">
-                                <span class="modal__price-sum">0</span>
-                                <button class="modal__price-pay" type="button">Оформить</button>
-                              </div> -->
 
-            <!-- start you-kassa -->
-            <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment"
-              method="post" accept-charset="utf-8">
+            <div class="modal__price-row">
+              <span>Цена: </span><span class="modal__price-sum" data-price-input>0</span><span> BYN</span>
+              <a class="modal__price-pay btn" href="payment.html">Оформить</a>
+            </div>
 
-              <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                <div class="yoomoney-form__pay-row">
-                  <span>Цена: </span>
-                  <input name="sum" placeholder="0.00"
-                    class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any"
-                    readonly>
-                  <span>BYN</span>
-                </div>
-              </div>
-              <div class="ym-customer-info yoomoney-form__info">
-                <p class="ym-block-title yoomoney-form__text">Введите ваши данные</p>
-                <div class="yoomoney-form__row">
-                  <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email"
-                    placeholder="Email" type="text" value="" required>
-                  <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone"
-                    placeholder="Телефон" type="text" value="" required>
-                  <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name"
-                    placeholder="ФИО" type="text" value="" required>
-                  <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress"
-                    placeholder="Адрес" type="text" value="">
-                  <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails"
-                    placeholder="Комментарий"></textarea>
-                </div>
-              </div>
-              <input name="shopId" type="hidden" value="278539">
-              <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
-                <span class="ym-text-crop">Оплатить</span>
-                <span class="ym-price-output"></span>
-              </button>
-            </form>
-            <!-- end you-kassa -->
-
-            <p class="modal__price-descr">Также осуществляем доставку по&nbsp;территории&nbsp;РБ.</p>
             <table class="info">
               <caption>Основные характеристики</caption>
               <tr>
@@ -966,6 +877,9 @@
                 <td>Нет</td>
               </tr>
             </table>
+            <small class="modal__price-descr">
+              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
+            </small>
           </div>
         </div>
       </div>
@@ -1036,58 +950,32 @@
           <div class="modal__info">
             <h3 class="modal__info-title">Титан 2ос.3518-03</h3>
             <p class="modal__descr">Размер кузова 3,5 метра в&nbsp;длину и&nbsp;1,8 метра в&nbsp;ширину.</p>
+
             <!-- <div class="modal__config config">
               <p class="config__title">Выберите комплектацию:</p>
               <div class="config__btn-group">
-                <button class="config__btn is-active" data-price="3646,50">Без колес без Тента</button>
-                <button class="config__btn" data-price="4673,13">Без колес Тент H1220C</button>
-                <button class="config__btn" data-price="4258,50">с колесами без Тента</button>
-                <button class="config__btn" data-price="5285,13">с колесами Тент H1220C</button>
+                <button class="config__btn is-active" data-price="3646,50">
+                  Без колес без Тента
+                </button>
+                <button class="config__btn" data-price="4673,13">
+                  Без колес Тент H1220C
+                </button>
+                <button class="config__btn" data-price="4258,50">
+                  с колесами без Тента
+                </button>
+                <button class="config__btn" data-price="5285,13">
+                  с колесами Тент H1220C
+                </button>
               </div>
+            </div>
+
+            <div class="modal__price-row">
+              <span>Цена: </span><span class="modal__price-sum" data-price-input>0</span><span> BYN</span>
+              <a class="modal__price-pay btn" href="payment.html">Оформить</a>
             </div> -->
-            <!-- <div class="modal__price-row">
-                              <span class="modal__price-sum">0</span>
-                              <button class="modal__price-pay" type="button">Оформить</button>
-                            </div> -->
 
-            <!-- start you-kassa -->
-            <!-- <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment"
-              method="post" accept-charset="utf-8">
-
-              <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                <div class="yoomoney-form__pay-row">
-                  <span>Цена: </span>
-                  <input name="sum" placeholder="0.00"
-                    class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any"
-                    readonly>
-                  <span>BYN</span>
-                </div>
-              </div>
-              <div class="ym-customer-info yoomoney-form__info">
-                <p class="ym-block-title yoomoney-form__text">Введите ваши данные</p>
-                <div class="yoomoney-form__row">
-                  <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email"
-                    placeholder="Email" type="text" value="" required>
-                  <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone"
-                    placeholder="Телефон" type="text" value="" required>
-                  <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name"
-                    placeholder="ФИО" type="text" value="" required>
-                  <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress"
-                    placeholder="Адрес" type="text" value="">
-                  <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails"
-                    placeholder="Комментарий"></textarea>
-                </div>
-              </div>
-              <input name="shopId" type="hidden" value="278539">
-              <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
-                <span class="ym-text-crop">Оплатить</span>
-                <span class="ym-price-output"></span>
-              </button>
-            </form> -->
-            <!-- end you-kassa -->
-
-            <!-- <p class="modal__price-descr">Также осуществляем доставку по&nbsp;территории&nbsp;РБ.</p> -->
             <p class="modal__price-descr">Цену уточняйте у&nbsp;наших специалистов.</p>
+
             <table class="info">
               <caption>Основные характеристики</caption>
               <tr>
@@ -1179,15 +1067,15 @@
                 <td>Нет</td>
               </tr>
             </table>
+            <small class="modal__price-descr">
+              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
+            </small>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- yookassa -->
-  <script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js"></script>
-  <!-- yookassa -->
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

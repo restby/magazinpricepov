@@ -1,21 +1,24 @@
-.yoomoney-form {
+.ym-form {
   margin-bottom: 20px;
 }
-.yoomoney-form__text {
+.ym-form__text {
   margin-top: 0;
   font-size: 18px;
 }
-.yoomoney-form__row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 20px;
-  row-gap: 14px;
-  margin-bottom: 20px;
-   @include vp-767 {
-        grid-template-columns: 1fr;
-      }
+.ym-form__row {
+  &--info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 14px;
+    margin-bottom: 20px;
+    @include vp-767 {
+      grid-template-columns: 1fr;
+    }
+  }
 }
-.yoomoney-form__input {
+
+.ym-form__input {
   border: 1px solid #5b5b5b;
   padding: 5px;
   font-style: normal;
@@ -24,25 +27,8 @@
   line-height: 18px;
   color: #5b5b5b;
 }
-.yoomoney-form__input--email {
-}
-.yoomoney-form__input--phone {
-}
-.yoomoney-form__input--full-name {
-}
-.yoomoney-form__input--adress {
-}
-.yoomoney-form__input--text {
-}
-.yoomoney-form__pay-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  & span:first-child {
-    margin-right: 10px;
-  }
-}
-.yoomoney-form__price-input {
+.ym-form__price-input {
+  background-color: $color-transparent;
   max-width: 76px;
   width: auto;
   border: none;
@@ -53,7 +39,7 @@
   line-height: 18px;
   color: #5b5b5b;
 }
-.yoomoney-form__button {
+.ym-form__button {
   padding: 8px;
   border-radius: 8px;
   font-size: 16px;
@@ -63,10 +49,11 @@
   background-color: $color-default-white;
   border: 1px solid $color-default-green;
   text-transform: uppercase;
-  transition: border-color $trans-default, background-color $trans-default, color $trans-default;
+  transition: border-color $trans-default, background-color $trans-default,
+    color $trans-default;
   color: $text-light;
-    background-color: $color-default-green;
-    border: 1px solid $color-default-dark;
+  background-color: $color-default-green;
+  border: 1px solid $color-default-dark;
   cursor: pointer;
 
   @include vp-767 {
@@ -95,4 +82,22 @@
     background-color: $color-default-green;
     border: 1px solid $color-default-dark;
   }
+}
+.ym-form__row {
+  &--item {
+  }
+  &--customer-info {
+  }
+  &--pay {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    & span:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+.ym-form__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
 }

@@ -349,3 +349,16 @@
 .modal__container {
   padding: 0;
 }
+.modal__price-row {
+  margin-bottom: 20px;
+
+  & span:last-of-type {
+    margin-right: 10px;
+  }
+}
+
+.modal__price-pay {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 0;
+}

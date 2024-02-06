@@ -18,9 +18,6 @@
   <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" crossorigin="anonymous" />
   <title>Прицепы для водной техники</title>
-  <!-- yookassa -->
-  <!-- <link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css"> -->
-  <!-- yookassa -->
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
@@ -322,63 +319,22 @@
           </div>
 
           <div class="modal__info">
-            <h3 class="modal__info-title">Титан Лодочный-2 5.0</h3>
+            <h3 class="modal__info-title" data-item-title>Титан Лодочный-2 5.0</h3>
             <div class="modal__config config">
               <p class="config__title">Выберите комплектацию:</p>
               <div class="config__btn-group">
-                <button class="config__btn is-active" data-price="1926.27">
+                <button class="config__btn is-active" data-price="1926,27">
                   Без колес
                 </button>
-                <button class="config__btn" data-price="2232.27">
+                <button class="config__btn" data-price="2232,27">
                   с колесами
                 </button>
               </div>
             </div>
-            <!-- <div class="modal__price-row">
-                <span class="modal__price-sum">0</span>
-                <button class="modal__price-pay" type="button">Оформить</button>
-              </div> -->
-
-            <!-- start you-kassa -->
-            <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment"
-              method="post" accept-charset="utf-8">
-              <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                <div class="yoomoney-form__pay-row">
-                  <span>Цена:</span>
-                  <input name="sum" placeholder="0.00"
-                    class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any"
-                    readonly />
-                  <span>BYN</span>
-                </div>
-              </div>
-              <div class="ym-customer-info yoomoney-form__info">
-                <p class="ym-block-title yoomoney-form__text">
-                  Введите ваши данные
-                </p>
-                <div class="yoomoney-form__row">
-                  <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email"
-                    placeholder="Email" type="text" value="" required />
-                  <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone"
-                    placeholder="Телефон" type="text" value="" required />
-                  <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name"
-                    placeholder="ФИО" type="text" value="" required />
-                  <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress"
-                    placeholder="Адрес" type="text" value="" />
-                  <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails"
-                    placeholder="Комментарий"></textarea>
-                </div>
-              </div>
-              <input name="shopId" type="hidden" value="278539" />
-              <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
-                <span class="ym-text-crop">Оплатить</span>
-                <span class="ym-price-output"></span>
-              </button>
-            </form>
-            <!-- end you-kassa -->
-
-            <p class="modal__price-descr">
-              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
-            </p>
+            <div class="modal__price-row">
+              <span>Цена: </span><span class="modal__price-sum" data-price-input>0</span><span> BYN</span>
+              <a class="modal__price-pay btn" href="payment.html">Оформить</a>
+            </div>
             <table class="info">
               <caption>Основные характеристики</caption>
               <tr>
@@ -455,6 +411,9 @@
                 <td>Нет</td>
               </tr>
             </table>
+            <small class="modal__price-descr">
+              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
+            </small>
           </div>
         </div>
       </div>
@@ -516,59 +475,20 @@
             <!-- <div class="modal__config config">
               <p class="config__title">Выберите комплектацию:</p>
               <div class="config__btn-group">
-                <button class="config__btn is-active" data-price="1697.79">
+                <button class="config__btn is-active" data-price="999999">
                   Без колес
                 </button>
-                <button class="config__btn" data-price="2003.79">
+                <button class="config__btn" data-price="889988">
                   с колесами
                 </button>
               </div>
+            </div>
+
+            <div class="modal__price-row">
+              <span>Цена: </span><span class="modal__price-sum" data-price-input>0</span><span> BYN</span>
+              <a class="modal__price-pay btn" href="payment.html">Оформить</a>
             </div> -->
-            <!-- <div class="modal__price-row">
-                <span class="modal__price-sum">0</span>
-                <button class="modal__price-pay" type="button">Оформить</button>
-              </div> -->
 
-            <!-- start you-kassa -->
-            <!-- <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment"
-              method="post" accept-charset="utf-8">
-              <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                <div class="yoomoney-form__pay-row">
-                  <span>Цена:</span>
-                  <input name="sum" placeholder="0.00"
-                    class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any"
-                    readonly />
-                  <span>BYN</span>
-                </div>
-              </div>
-              <div class="ym-customer-info yoomoney-form__info">
-                <p class="ym-block-title yoomoney-form__text">
-                  Введите ваши данные
-                </p>
-                <div class="yoomoney-form__row">
-                  <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email"
-                    placeholder="Email" type="text" value="" required />
-                  <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone"
-                    placeholder="Телефон" type="text" value="" required />
-                  <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name"
-                    placeholder="ФИО" type="text" value="" required />
-                  <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress"
-                    placeholder="Адрес" type="text" value="" />
-                  <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails"
-                    placeholder="Комментарий"></textarea>
-                </div>
-              </div>
-              <input name="shopId" type="hidden" value="278539" />
-              <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
-                <span class="ym-text-crop">Оплатить</span>
-                <span class="ym-price-output"></span>
-              </button>
-            </form> -->
-            <!-- end you-kassa -->
-
-            <!-- <p class="modal__price-descr">
-              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
-            </p> -->
             <p class="modal__price-descr">Цену уточняйте у&nbsp;наших специалистов.</p>
             <table class="info">
               <caption>Основные характеристики</caption>
@@ -646,6 +566,9 @@
                 <td>Нет</td>
               </tr>
             </table>
+            <small class="modal__price-descr">
+              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
+            </small>
           </div>
         </div>
       </div>
@@ -711,59 +634,18 @@
             <!-- <div class="modal__config config">
               <p class="config__title">Выберите комплектацию:</p>
               <div class="config__btn-group">
-                <button class="config__btn is-active" data-price="1900.77">
+                <button class="config__btn is-active" data-price="777777">
                   Без колес
                 </button>
-                <button class="config__btn" data-price="2206.77">
+                <button class="config__btn" data-price="667766">
                   с колесами
                 </button>
               </div>
+            </div>
+            <div class="modal__price-row">
+              <span>Цена: </span><span class="modal__price-sum" data-price-input>0</span><span> BYN</span>
+              <a class="modal__price-pay btn" href="payment.html">Оформить</a>
             </div> -->
-            <!-- <div class="modal__price-row">
-                <span class="modal__price-sum">0</span>
-                <button class="modal__price-pay" type="button">Оформить</button>
-              </div> -->
-
-            <!-- start you-kassa -->
-            <!-- <form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment"
-              method="post" accept-charset="utf-8">
-              <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-                <div class="yoomoney-form__pay-row">
-                  <span>Цена:</span>
-                  <input name="sum" placeholder="0.00"
-                    class="ym-input ym-sum-input ym-required-input yoomoney-form__price-input" type="number" step="any"
-                    readonly />
-                  <span>BYN</span>
-                </div>
-              </div>
-              <div class="ym-customer-info yoomoney-form__info">
-                <p class="ym-block-title yoomoney-form__text">
-                  Введите ваши данные
-                </p>
-                <div class="yoomoney-form__row">
-                  <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email"
-                    placeholder="Email" type="text" value="" required />
-                  <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone"
-                    placeholder="Телефон" type="text" value="" required />
-                  <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name"
-                    placeholder="ФИО" type="text" value="" required />
-                  <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress"
-                    placeholder="Адрес" type="text" value="" />
-                  <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails"
-                    placeholder="Комментарий"></textarea>
-                </div>
-              </div>
-              <input name="shopId" type="hidden" value="278539" />
-              <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
-                <span class="ym-text-crop">Оплатить</span>
-                <span class="ym-price-output"></span>
-              </button>
-            </form> -->
-            <!-- end you-kassa -->
-
-            <!-- <p class="modal__price-descr">
-              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
-            </p> -->
             <p class="modal__price-descr">Цену уточняйте у&nbsp;наших специалистов.</p>
             <table class="info">
               <caption>Основные характеристики</caption>
@@ -841,15 +723,15 @@
                 <td>Нет</td>
               </tr>
             </table>
+            <small class="modal__price-descr">
+              Также осуществляем доставку по&nbsp;территории&nbsp;РБ.
+            </small>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- yookassa -->
-  <script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js"></script>
-  <!-- yookassa -->
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

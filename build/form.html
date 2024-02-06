@@ -1,24 +1,32 @@
-<link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css">
-
-<form class="yoomoney-payment-form yoomoney-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
-  <div class="ym-customer-info yoomoney-form__info">
-        <h2 class="ym-block-title yoomoney-form__text">Введите ваши данные</h2>
-        <input name="cps_email" class="ym-input yoomoney-form__input yoomoney-form__input--email" placeholder="Email" type="text" value="">
-        <input name="cps_phone" class="ym-input yoomoney-form__input yoomoney-form__input--phone" placeholder="Телефон" type="text" value="">
-        <input name="custName" class="ym-input yoomoney-form__input yoomoney-form__input--full-name" placeholder="ФИО" type="text" value="">
-        <input name="custAddr" class="ym-input yoomoney-form__input yoomoney-form__input--adress" placeholder="Адрес" type="text" value="">
-        <textarea class="ym-textarea yoomoney-form__input yoomoney-form__input--text" name="orderDetails" placeholder="Комментарий" value=""></textarea>
-    </div>
-    <div class="ym-payment-btn-block ym-before-line ym-align-space-between yoomoney-form__pay">
-        <div class="ym-input-icon-rub">
-            <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input yoomoney-form__sum" type="number" step="any">
-        </div>
-        <button data-text="Оплатить" class="ym-btn-pay ym-result-price yoomoney-form__button">
-          <span class="ym-text-crop">Оплатить</span>
-          <span class="ym-price-output"></span>
-        </button>
-        </div>
-  <input name="shopId" type="hidden" value="278539">
-</form>
-
-<script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js"></script>
+<!-- start you-kassa -->
+<!-- <form class="ym-form" action="https://yookassa.ru/integration/simplepay/payment" method="post"
+              accept-charset="utf-8">
+              <div class="ym-form__row ym-form__row--pay">
+                <span>Цена:</span>
+                <input name="sum" placeholder="0.00" class="ym-form__price-input" type="number" step="any" readonly
+                  data-price-input />
+                <span>BYN</span>
+              </div>
+              <div class="ym-form__info">
+                <p class="ym-form__text">
+                  Введите ваши данные
+                </p>
+                <div class="ym-form__row ym-form__row--info">
+                  <input name="cps_email" class="ym-form__input ym-form__input--email" placeholder="Email" type="text"
+                    value="" required />
+                  <input name="cps_phone" class="ym-form__input ym-form__input--phone" placeholder="Телефон" type="text"
+                    value="" required />
+                  <input name="custName" class="ym-form__input ym-form__input--full-name" placeholder="ФИО" type="text"
+                    value="" required />
+                  <input name="custAddr" class="ym-form__input ym-form__input--adress" placeholder="Адрес" type="text"
+                    value="" />
+                  <textarea class="ym-form__input ym-form__input--text" name="orderDetails"
+                    placeholder="Комментарий"></textarea>
+                </div>
+              </div>
+              <input name="shopId" type="hidden" value="278539" />
+              <button data-text="Оплатить" class="ym-form__button">
+                <span>Оплатить</span>
+              </button>
+            </form> -->
+<!-- end you-kassa -->

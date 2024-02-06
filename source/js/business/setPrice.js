@@ -1,15 +1,24 @@
 const setDefaultPrice = () => {
   if (document.querySelectorAll('.modal')) {
-    const yoomoneyFormPriceInputs = document.querySelectorAll(
-        '.yoomoney-form__price-input'
+    const priceField = document.querySelectorAll(
+        '[data-price-input]'
     );
     const pricesDefault = document.querySelectorAll(
         '.config__btn.is-active'
     );
     pricesDefault.forEach((priceDefault, index) => {
+
       const priceValue = priceDefault.getAttribute('data-price');
+      /*
+        Вариант с input:
       const numericValue = parseFloat(priceValue.replace(',', '.'));
-      yoomoneyFormPriceInputs[index].value = isNaN(numericValue) ? '' : numericValue;
+      priceField[index].value = isNaN(numericValue) ? '' : numericValue;
+      */
+
+      /*
+        Вариант просто с текстом
+      */
+      priceField[index].textContent = priceValue;
     });
   }
 };
@@ -23,8 +32,7 @@ const setPrice = () => {
     // Получаем элементы DOM внутри каждого модального окна
       const buttons = modal.querySelectorAll('.config__btn');
 
-      const priceInput = modal.querySelector('.yoomoney-form__price-input');
-      // const priceSum = modal.querySelector('.modal__price-sum');
+      const priceField = modal.querySelector('[data-price-input]');
 
       // Обработчик события клика на кнопке
       // function handleButtonClick(event) {
@@ -50,10 +58,18 @@ const setPrice = () => {
             button.classList.remove('is-active');
           }
         });
+
         // Получаем значение атрибута data-price
         const price = event.currentTarget.getAttribute('data-price');
-        const numericValue = parseFloat(price.replace(',', '.'));
+        /*
+        Вариант с input:
+      const numericValue = parseFloat(price.replace(',', '.'));
         priceInput.value = isNaN(numericValue) ? '' : numericValue;
+      */
+        /*
+        Вариант просто с текстом
+      */
+        priceField.textContent = price;
       }
 
       // Добавляем обработчик события клика на каждую кнопку в текущем модальном окне
