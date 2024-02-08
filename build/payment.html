@@ -79,9 +79,9 @@
     <main>
       <section class="payment">
         <h2 class="payment__title visually-hidden">Оплата товара</h2>
-        <div class="container payment__container">
+        <div class="container payment__container" data-form-validate="data-form-validate">
           <form class="ym-form" action="https://yookassa.ru/integration/simplepay/payment" method="post"
-            accept-charset="utf-8">
+            accept-charset="utf-8" data-ym-form>
             <div class="ym-form__row ym-form__row--item item">
               <h4 class="item__text ym-form__subtitle">Информация о товаре</h4>
               <div class="item__info">
@@ -98,21 +98,43 @@
             <div class="ym-form__row ym-form__row--customer-info customer-info">
               <h4 class="customer-info__title ym-form__subtitle">Информация о покупателе</h4>
               <div class="customer-info__inner">
-                <input name="cps_email" class="customer-info__input customer-info__input--email" placeholder="Email"
-                  type="text">
-                <input name="cps_phone" class="customer-info__input customer-info__input--phone" placeholder="Телефон"
-                  type="text">
-                <input name="custName" class="customer-info__input customer-info__input--full-name" placeholder="ФИО"
-                  type="text">
-                <input name="custAddr" class="customer-info__input customer-info__input--adress" placeholder="Адрес"
-                  type="text">
-                <textarea class="customer-info__input customer-info__input--text" name="orderDetails"
-                  placeholder="Комментарий к заказу"></textarea>
+                <div class="ym-form__field" data-on-input-validate="data-on-input-validate" data-validate-type="email"
+                  data-message-base="Обязательное поле" data-message-extra="Проверьте корректность заполнения поля"
+                  data-message-success="Поле заполнено верно" data-required="data-required">
+                  <label for="user-email" class="visually-hidden">Электронная почта</label>
+                  <input name="cps_email" class="customer-info__input customer-info__input--email" placeholder="Email"
+                    type="email" id="user-email" required>
+                </div>
+                <div class="ym-form__field" data-on-input-validate="data-on-input-validate" data-validate-type="phone"
+                  data-message-base="Обязательное поле" data-message-extra="Проверьте корректность заполнения поля"
+                  data-message-success="Поле заполнено верно" data-required="data-required">
+                  <label for="user-phone" class="visually-hidden">Номер телефона</label>
+                  <input name="cps_phone" class="customer-info__input customer-info__input--phone" placeholder="Телефон"
+                    type="tel" id="user-phone" required>
+                </div>
+                <div class="ym-form__field" data-on-input-validate="data-on-input-validate" data-validate-type="text"
+                  data-limitation="name" data-message-base="Обязательное поле"
+                  data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                  <label for="user-name" class="visually-hidden">ФИО</label>
+                  <input name="custName" class="customer-info__input customer-info__input--full-name" placeholder="ФИО"
+                    type="text" id="user-name" required>
+                </div>
+                <div class="ym-form__field" data-on-input-validate="data-on-input-validate" data-validate-type="text"
+                  data-message-extra="Проверьте корректность заполнения поля">
+                  <label for="user-adress" class="visually-hidden">Адрес</label>
+                  <input name="custAddr" class="customer-info__input customer-info__input--adress" placeholder="Адрес"
+                    type="text" id="user-adress">
+                </div>
+                <div class="ym-form__field" data-validate-type="text">
+                  <label for="user-comment" class="visually-hidden">Комментарий</label>
+                  <textarea class="customer-info__input customer-info__input--text" name="orderDetails"
+                    placeholder="Комментарий к заказу" id="user-comment"></textarea>
+                </div>
               </div>
             </div>
 
             <div class="ym-form__row ym-form__row--pay">
-              <button data-text="Оплатить" class="ym-form__button">Оплатить</button>
+              <button data-text="Оплатить" class="ym-form__button" type="submit">Оплатить</button>
               <input name="shopId" type="hidden" value="278539">
             </div>
           </form>
