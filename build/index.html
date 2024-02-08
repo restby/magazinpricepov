@@ -1,510 +1,505 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Легковые автоприцепы">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon/icon-logo.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicon/apple-icon.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#00FF76">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#00FF76">
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" crossorigin="anonymous">
-    <title>Прицепы</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Легковые автоприцепы">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon-logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/apple-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#00FF76">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#00FF76">
+  <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" crossorigin="anonymous">
+  <title>Прицепы</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
 
-  <body>
-    <div class="wrapper webp">
-      <header class="page-header" data-header-element>
-        <div class="page-header__container" data-header>
-          <div class="container">
-            <div class="page-header__wrapper">
-              <button class="page-header__burger" type="button" aria-label="Переключатель отображения меню."
-                aria-pressed="false" data-burger>
-                <svg class="page-header__burger-icon page-header__burger-icon--open" width="26" height="26"
-                  aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-menu"></use>
+<body>
+  <div class="wrapper webp">
+    <header class="page-header" data-header-element>
+      <div class="page-header__container" data-header>
+        <div class="container">
+          <div class="page-header__wrapper">
+            <button class="page-header__burger" type="button" aria-label="Переключатель отображения меню."
+              aria-pressed="false" data-burger>
+              <svg class="page-header__burger-icon page-header__burger-icon--open" width="26" height="26"
+                aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-menu"></use>
+              </svg>
+              <svg class="page-header__burger-icon page-header__burger-icon--close" width="22" height="22"
+                aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="page-header__logo logo logo--header">
+              <h1 class="visually-hidden">Легковые автоприцепы</h1>
+              <a class="logo__link logo__link--header" aria-label="Переход на главную страницу">
+                <svg width="113" height="43">
+                  <use href="img/sprite.svg#icon-logo-dark"></use>
                 </svg>
-                <svg class="page-header__burger-icon page-header__burger-icon--close" width="22" height="22"
-                  aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-close"></use>
-                </svg>
-              </button>
-              <div class="page-header__logo logo logo--header">
-                <h1 class="visually-hidden">Легковые автоприцепы</h1>
-                <a class="logo__link logo__link--header" aria-label="Переход на главную страницу">
-                  <svg width="113" height="43">
-                    <use href="img/sprite.svg#icon-logo-dark"></use>
-                  </svg>
-                </a>
-              </div>
-              <nav class="page-header__nav nav nav--header" data-nav-header>
-                <ul class="page-header__list nav__list nav__list--header">
-                  <li class="page-header__item nav__item">
-                    <a class="page-header__link nav__link" href="#uniaxial" data-link-menu>Одноосные прицепы</a>
-                  </li>
-                  <li class="page-header__item nav__item">
-                    <a class="page-header__link nav__link" href="#biaxial" data-link-menu>Двухосные прицепы</a>
-                  </li>
-                  <li class="page-header__item nav__item">
-                    <a class="page-header__link nav__link" href="#boat" data-link-menu>Прицепы для водной
-                      техники</a>
-                  </li>
-                  <!-- <li class="page-header__item nav__item">
+              </a>
+            </div>
+            <nav class="page-header__nav nav nav--header" data-nav-header>
+              <ul class="page-header__list nav__list nav__list--header">
+                <li class="page-header__item nav__item">
+                  <a class="page-header__link nav__link" href="#uniaxial" data-link-menu>Одноосные прицепы</a>
+                </li>
+                <li class="page-header__item nav__item">
+                  <a class="page-header__link nav__link" href="#biaxial" data-link-menu>Двухосные прицепы</a>
+                </li>
+                <li class="page-header__item nav__item">
+                  <a class="page-header__link nav__link" href="#boat" data-link-menu>Прицепы для водной
+                    техники</a>
+                </li>
+                <!-- <li class="page-header__item nav__item">
                     <a class="page-header__link nav__link" href="#contacts" data-link-menu>Контакты</a>
                   </li>
                   <li class="page-header__item nav__item">
                     <a class="page-header__link nav__link" href="#reviews" data-link-menu>Отзывы</a>
                   </li> -->
-                </ul>
-              </nav>
-              <div class="page-header__phone">
-                <a class="page-header__link page-header__link--phone" href="tel:+79206691969">+7 (920) 669-19-69</a>
-                <a class="page-header__link page-header__link--phone" href="tel:375295944261">+375 (29) 594-42-61</a>
-              </div>
+              </ul>
+            </nav>
+            <div class="page-header__phone">
+              <a class="page-header__link page-header__link--phone" href="tel:+79206691969">+7 (920) 669-19-69</a>
+              <a class="page-header__link page-header__link--phone" href="tel:375295944261">+375 (29) 594-42-61</a>
             </div>
           </div>
         </div>
-      </header>
-      <main>
+      </div>
+    </header>
+    <main>
 
-        <section class="promo">
-          <picture>
-            <source type="image/webp" media="(min-width: 1199px)" srcset="img/2.webp">
-            <img src="img/2.jpg" alt="Промо изображение">
-          </picture>
+      <section class="promo">
+        <h2 class="promo__title visually-hidden">Промо-текст</h2>
+        <picture>
+          <source type="image/webp" media="(min-width: 1199px)" srcset="img/2.webp">
+          <img src="img/2.jpg" alt="Промо изображение">
+        </picture>
 
-          <div class="container promo__container">
-            <p class="promo__text">
-              Мы&nbsp;занимаемся реализацией качественных легковых прицепов.<br>
-              Наша продукция, отличается высоким качеством, легкой сборкой, длительной и&nbsp;удобной эксплуатацией
-              и&nbsp;главное&nbsp;&mdash; доступной ценой.
-            </p>
-          </div>
-        </section>
+        <div class="container promo__container">
+          <p class="promo__text">
+            Мы&nbsp;занимаемся реализацией качественных легковых прицепов.<br>
+            Наша продукция, отличается высоким качеством, легкой сборкой, длительной и&nbsp;удобной эксплуатацией
+            и&nbsp;главное&nbsp;&mdash; доступной ценой.
+          </p>
+        </div>
+      </section>
 
-        <section class="contacts">
-          <div class="container contacts__container">
-            <h2 class="contacts__tilte section-title">Наши контакты</h2>
-            <div class="contacts__info">
-              <div class="contacts__col">
-                <a href="tel:+79206691969"><svg width="48" height="48">
-                    <use href="img/sprite.svg#icon-phone"></use>
-                  </svg>+7 (920) 669-19-69</a>
-              </div>
-              <div class="contacts__col">
-                <a href="tel:+375295944261"><svg width="48" height="48">
-                    <use href="img/sprite.svg#icon-phone"></use>
-                  </svg>+375(29)594 42 61</a>
-              </div>
-              <div class="contacts__col">
-                <a href="mailto:prichapi@yandex.ru">
-                  <svg width="52" height="52">
-                    <use href="img/sprite.svg#icon-mail"></use>
-                  </svg>prichapi@yandex.ru</a>
-              </div>
-              <div class="contacts__col">
-                <a href="viber://chat?number=%2B375295944261"><svg width="52" height="52">
-                    <use href="img/sprite.svg#icon-viber"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="contacts__col">
-                <a href="https://api.whatsapp.com/send/?phone=375295944261"><svg width="52" height="52">
-                    <use href="img/sprite.svg#icon-whatsapp"></use>
-                  </svg>
-                </a></a>
-              </div>
+      <section class="contacts">
+        <div class="container contacts__container">
+          <h2 class="contacts__tilte section-title">Наши контакты</h2>
+          <div class="contacts__info">
+            <div class="contacts__col">
+              <a href="tel:+79206691969"><svg width="48" height="48">
+                  <use href="img/sprite.svg#icon-phone"></use>
+                </svg>+7 (920) 669-19-69</a>
             </div>
-            <!-- <div class="contacts__map map">
-                      <div class="map__wrapper"><img src="" alt=""></div>
-                    </div>
-                  </div> -->
-        </section>
-
-        <section class="uniaxial" id="uniaxial">
-          <div class="container uniaxial__container">
-            <h2 class="uniaxial__title section-title">Одноосные прицепы</h2>
-            <p class="uniaxial__descr section-descr">Универсальные прицепы для бытовых задач, станут надёжным помощником
-              по&nbsp;дому.
-              Обладают эргономичной и&nbsp;лёгкой конструкцией, которая позволяет экономить на&nbsp;топливе
-              и&nbsp;придает удобство
-              маневрирования на
-              дорогах. Прицепы имеют надёжную защиту от&nbsp;коррозии в&nbsp;результате метода горячего оцинкования.</p>
-            <div class="uniaxial__slider-container">
-              <div class="uniaxial__slider swiper" data-uniaxial__slider>
-                <div class="uniaxial__wrapper swiper-wrapper">
-
-                  <div class="uniaxial__slide swiper-slide slide">
-                    <div class="slide__container">
-                      <a class="slide__img-container" href="uniaxial.html">
-                        <picture>
-                          <source type="image/webp" media="(min-width: 1199px)"
-                            srcset="img/popular/a2013-05-01-01.webp">
-                          <img width="400" height="200" src="img/popular/a2013-05-01-01.jpg" alt="АТЛАНТ 2013-05.">
-                        </picture>
-                      </a>
-                      <div class="slide__info">
-                        <span class="slide__info-keys">ДхШхВ, м:</span>
-                        <span class="slide__info-value">2.0 х 1.3 х 0.5</span>
-                      </div>
-                      <div class="slide__content">
-                        <a href="uniaxial.html">
-                          <h3 class="slide__title">АТЛАНТ 2013-05</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="uniaxial__slide swiper-slide slide">
-                    <div class="slide__container">
-                      <a class="slide__img-container" href="uniaxial.html">
-                        <picture>
-                          <source type="image/webp" srcset="img/popular/t3015-03-01-01.webp">
-                          <img width="400" height="200" src="img/popular/t3015-03-01-01.jpg" alt="Титан 3015-03.">
-                        </picture>
-                      </a>
-                      <div class="slide__info">
-                        <span class="slide__info-keys">ДхШхВ, м:</span>
-                        <span class="slide__info-value">3.0 х 1.5 х 0.3</span>
-                      </div>
-                      <div class="slide__content">
-                        <a href="uniaxial.html">
-                          <h3 class="slide__title">Титан 3015-03</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="uniaxial__slide swiper-slide slide">
-                    <div class="slide__container">
-                      <a class="slide__img-container" href="uniaxial.html">
-                        <picture>
-                          <source type="image/webp" srcset="img/popular/t2013-01-01-01.webp">
-                          <img width="400" height="200" src="img/popular/t2013-01-01-01.jpg" alt="Титан 2013-01.">
-                        </picture>
-                      </a>
-                      <div class="slide__info">
-                        <span class="slide__info-keys">ДхШхВ, м:</span>
-                        <span class="slide__info-value">2.0 х 1.3 х 0.1</span>
-                      </div>
-                      <div class="slide__content">
-                        <a href="uniaxial.html">
-                          <h3 class="slide__title">Титан 2013-01</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="uniaxial__slide swiper-slide slide">
-                    <div class="slide__container">
-                      <a class="slide__img-container" href="uniaxial.html">
-                        <picture>
-                          <source type="image/webp" srcset="img/popular/t3015-03-01-01.webp">
-                          <img width="400" height="200" src="img/popular/t3015-03-01-01.jpg" alt="Титан 3518-05.">
-                        </picture>
-                      </a>
-                      <div class="slide__info">
-                        <span class="slide__info-keys">ДхШхВ, м:</span>
-                        <span class="slide__info-value">3.5 х 1.8 х 0.5</span>
-                      </div>
-                      <div class="slide__content">
-                        <a href="uniaxial.html">
-                          <h3 class="slide__title">Титан 3518-05</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="uniaxial__btns slider-btns">
-                <button
-                  class="uniaxial__arrow uniaxial__arrow--prev slider-btns__arrow slider-btns__arrow--prev swiper-arrow swiper-button-prev"
-                  type="button" aria-label="Предыдущий слайд." data-uniaxial__arrow--prev>
-                  <svg width="16" height="32">
-                    <use href="img/sprite.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <button
-                  class="uniaxial__arrow uniaxial__arrow--next slider-btns__arrow slider-btns__arrow--next swiper-arrow swiper-button-next"
-                  type="button" aria-label="Следующий слайд." data-uniaxial__arrow--next>
-                  <svg width="16" height="32">
-                    <use href="img/sprite.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-              </div>
+            <div class="contacts__col">
+              <a href="tel:+375295944261"><svg width="48" height="48">
+                  <use href="img/sprite.svg#icon-phone"></use>
+                </svg>+375(29)594 42 61</a>
             </div>
-            <a class="uniaxial__link" href="uniaxial.html">Смотреть все</a>
-          </div>
-        </section>
-
-        <section class="biaxial" id="biaxial">
-          <div class="container biaxial__container">
-            <h2 class="biaxial__title section-title">Двухосные прицепы</h2>
-            <p class="biaxial__descr section-descr">Ваши новые надёжные помощники по&nbsp;дому. Повышенная
-              грузоподъёмность
-              и&nbsp;устойчивость
-              прицепов, из-за наличия двух осей, позволит осуществить любые необходимые перевозки. Прицепы имеют
-              надёжную
-              защиту от&nbsp;коррозии в&nbsp;результате метода горячего оцинкования.
-              Обладают эргономичной и&nbsp;лёгкой конструкцией, которая позволяет экономить на&nbsp;топливе. Благодаря
-              оптимальным
-              размерам придает удобство
-              маневрирования на
-              дорогах.</p>
-            <div class="biaxial__slider-container">
-              <div class="biaxial__slider swiper" data-biaxial__slider>
-                <div class="biaxial__wrapper swiper-wrapper">
-
-                  <div class="biaxial__slide swiper-slide slide">
-                    <div class="slide__container">
-                      <a class="slide__img-container" href="biaxial.html">
-                        <picture>
-                          <source type="image/webp" media="(min-width: 1199px)"
-                            srcset="img/popular/t-02-2515-01-01-00.webp">
-                          <img width="400" height="200" src="img/popular/t-02-2515-01-01-00.jpg"
-                            alt="Титан 2ос.2515-01.">
-                        </picture>
-                      </a>
-                      <div class="slide__info">
-                        <span class="slide__info-keys">ДхШхВ, м:</span>
-                        <span class="slide__info-value">2.5 х 1.5 х 0.1</span>
-                      </div>
-                      <div class="slide__content">
-                        <a href="biaxial.html">
-                          <h3 class="slide__title">Титан 2ос.2515-01</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="biaxial__slide swiper-slide slide">
-                    <div class="slide__container">
-                      <a class="slide__img-container" href="biaxial.html">
-                        <picture>
-                          <source type="image/webp" srcset="img/popular/t-02-3515-03-01-01.webp">
-                          <img width="400" height="200" src="img/popular/t-02-3515-03-01-01.jpg"
-                            alt="Титан 2ос.3515-03.">
-                        </picture>
-                      </a>
-                      <div class="slide__info">
-                        <span class="slide__info-keys">ДхШхВ, м:</span>
-                        <span class="slide__info-value">3.5 х 1.5 х 0.3</span>
-                      </div>
-                      <div class="slide__content">
-                        <a href="biaxial.html">
-                          <h3 class="slide__title">Титан 2ос.3515-03</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="biaxial__slide swiper-slide slide">
-                    <div class="slide__container">
-                      <a class="slide__img-container" href="biaxial.html">
-                        <picture>
-                          <source type="image/webp" srcset="img/popular/t-02-3518-03-01-01.webp">
-                          <img width="400" height="200" src="img/popular/t-02-3518-03-01-01.jpg"
-                            alt="Титан 2ос.3518-03.">
-                        </picture>
-                      </a>
-                      <div class="slide__info">
-                        <span class="slide__info-keys">ДхШхВ, м:</span>
-                        <span class="slide__info-value">3.5 х 1.8 х 0.3</span>
-                      </div>
-                      <div class="slide__content">
-                        <a href="biaxial.html">
-                          <h3 class="slide__title">Титан 2ос.3518-03</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="biaxial__slide swiper-slide slide">
-                    <div class="slide__container">
-                      <a class="slide__img-container" href="biaxial.html">
-                        <picture>
-                          <source type="image/webp" srcset="img/popular/t-02-2515-05-01-01.webp">
-                          <img width="400" height="200" src="img/popular/t-02-2515-05-01-01.jpg"
-                            alt="Титан 2ос.2515-05.">
-                        </picture>
-                      </a>
-                      <div class="slide__info">
-                        <span class="slide__info-keys">ДхШхВ, м:</span>
-                        <span class="slide__info-value">2.5 х 1.5 х 0.5</span>
-                      </div>
-                      <div class="slide__content">
-                        <a href="biaxial.html">
-                          <h3 class="slide__title">Титан 2ос.2515-05</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="biaxial__btns slider-btns">
-                <button
-                  class="biaxial__arrow biaxial__arrow--prev slider-btns__arrow slider-btns__arrow--prev swiper-arrow swiper-button-prev"
-                  type="button" aria-label="Предыдущий слайд." data-biaxial__arrow--prev>
-                  <svg width="16" height="32">
-                    <use href="img/sprite.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <button
-                  class="biaxial__arrow biaxial__arrow--next slider-btns__arrow slider-btns__arrow--next swiper-arrow swiper-button-next"
-                  type="button" aria-label="Следующий слайд." data-biaxial__arrow--next>
-                  <svg width="16" height="32">
-                    <use href="img/sprite.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-              </div>
+            <div class="contacts__col">
+              <a href="mailto:prichapi@yandex.ru">
+                <svg width="52" height="52">
+                  <use href="img/sprite.svg#icon-mail"></use>
+                </svg>prichapi@yandex.ru</a>
             </div>
-            <a class="biaxial__link" href="biaxial.html">Смотреть все</a>
-          </div>
-        </section>
-
-        <section class="boat" id="boat">
-          <div class="container boat__container">
-            <h2 class="boat__title section-title">Прицепы для водной техники</h2>
-            <p class="boat__descr section-descr">Универсальные прицепы для удобной первозки килевых и&nbsp;плоскодонных
-              лодок
-              максимальной
-              длиной до&nbsp;5&nbsp;м. Обладают эргономичной и&nbsp;лёгкой конструкцией, которая позволяет экономить
-              на&nbsp;топливе.
-              Рама и&nbsp;дышло полностью оцинкованы методом горячего оцинкования. Продольные ложементы имеют
-              регулируемый угол
-              наклона и&nbsp;оборудованы передвижными кронштейнами. Они могут быть установлены
-              на&nbsp;необходимую высоту и&nbsp;ширину лодки.</p>
-            <div class="boat__slider-container">
-              <div class="boat__slider swiper" data-boat__slider>
-                <div class="boat__wrapper swiper-wrapper">
-
-                  <div class="boat__slide swiper-slide slide">
-                    <div class="slide__container">
-                      <a class="slide__img-container" href="boat.html">
-                        <picture>
-                          <source type="image/webp" media="(min-width: 1199px)" srcset="img/popular/l-250-01-00.webp">
-                          <img width="400" height="200" src="img/popular/l-250-01-00.jpg" alt="Титан Лодочный-2 5.0.">
-                        </picture>
-                      </a>
-                      <div class="slide__content">
-                        <a href="boat.html">
-                          <h3 class="slide__title">Титан Лодочный-2 5.0</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="boat__slide swiper-slide slide">
-                    <div class="slide__container">
-                      <a class="slide__img-container" href="boat.html">
-                        <picture>
-                          <source type="image/webp" srcset="img/popular/l-143-01-00.webp">
-                          <img width="400" height="200" src="img/popular/l-143-01-00.jpg" alt="Титан Лодочный-1 4.3.">
-                        </picture>
-                      </a>
-                      <div class="slide__content">
-                        <a href="boat.html">
-                          <h3 class="slide__title">Титан Лодочный-1 4.3</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="boat__slide swiper-slide slide">
-                    <div class="slide__container">
-                      <a class="slide__img-container" href="boat.html">
-                        <picture>
-                          <source type="image/webp" srcset="img/popular/l-240-01-00.webp">
-                          <img width="400" height="200" src="img/popular/l-240-01-00.jpg"
-                            alt="Титан Лодочный-2 4.0 (Гидроцикл).">
-                        </picture>
-                      </a>
-                      <div class="slide__content">
-                        <a href="boat.html">
-                          <h3 class="slide__title">Титан Лодочный-2 4.0 (Гидроцикл)</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="boat__btns slider-btns">
-                <button
-                  class="boat__arrow boat__arrow--prev slider-btns__arrow slider-btns__arrow--prev swiper-arrow swiper-button-prev"
-                  type="button" aria-label="Предыдущий слайд." data-boat__arrow--prev>
-                  <svg width="16" height="32">
-                    <use href="img/sprite.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-                <button
-                  class="boat__arrow boat__arrow--next slider-btns__arrow slider-btns__arrow--next swiper-arrow swiper-button-next"
-                  type="button" aria-label="Следующий слайд." data-boat__arrow--next>
-                  <svg width="16" height="32">
-                    <use href="img/sprite.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <a class="boat__link" href="boat.html">Смотреть все</a>
-          </div>
-        </section>
-
-      </main>
-      <footer class="page-footer">
-        <div class="container page-footer__container">
-          <div class="page-footer__wrapper">
-            <div class="page-footer__logo logo logo--footer">
-              <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
-                <svg width="205" height="62">
-                  <use href="img/sprite.svg#icon-logo-dark"></use>
+            <div class="contacts__col">
+              <a href="viber://chat?number=%2B375295944261"><svg width="52" height="52">
+                  <use href="img/sprite.svg#icon-viber"></use>
                 </svg>
               </a>
             </div>
-            <nav class="page-footer__nav nav nav--footer">
-              <ul class="page-footer__list nav__list nav__list--footer">
-                <li class="page-footer__item nav__item">
-                  <a class="page-footer__link nav__link" href="index.html" data-link-menu>Главная</a>
-                </li>
-                <li class="page-footer__item nav__item">
-                  <a class="page-footer__link nav__link" href="uniaxial.html">Одноосные прицепы</a>
-                </li>
-                <li class="page-footer__item nav__item">
-                  <a class="page-footer__link nav__link" href="biaxial.html" data-link-menu>Двухосные прицепы</a>
-                </li>
-                <li class="page-footer__item nav__item">
-                  <a class="page-footer__link nav__link" href="boat.html" data-link-menu>Прицепы для водной
-                    техники</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="page-footer__about about">
-              <p>ИП&nbsp;Трубчик Анатолий Миронович</p>
-              <p> ИНН 672609854490, ОГРНИП 322673300021844</p>
-              <p>Почтовый адрес 215523, Смоленская область, д.Пушкино, Сафоновский р-он, ул. Пролетарская, дом&nbsp;29,
-                кв. 12</p>
-              <p><span>Телефон: <a href="tel:+79206691969">+7 (920) 669-19-69</a><br></p>
-              <p>Почта: <a href="mailto:trubchikanatoly@yandex.by">trubchikanatoly@yandex.by</a></p>
+            <div class="contacts__col">
+              <a href="https://api.whatsapp.com/send/?phone=375295944261"><svg width="52" height="52">
+                  <use href="img/sprite.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
             </div>
           </div>
+          <!-- <div class="contacts__map map">
+                      <div class="map__wrapper"><img src="" alt=""></div>
+                    </div>-->
         </div>
-      </footer>
-      <div class="overlay" data-overlay></div>
-    </div>
+      </section>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+      <section class="uniaxial" id="uniaxial">
+        <div class="container uniaxial__container">
+          <h2 class="uniaxial__title section-title">Одноосные прицепы</h2>
+          <p class="uniaxial__descr section-descr">Универсальные прицепы для бытовых задач, станут надёжным помощником
+            по&nbsp;дому.
+            Обладают эргономичной и&nbsp;лёгкой конструкцией, которая позволяет экономить на&nbsp;топливе
+            и&nbsp;придает удобство
+            маневрирования на
+            дорогах. Прицепы имеют надёжную защиту от&nbsp;коррозии в&nbsp;результате метода горячего оцинкования.</p>
+          <div class="uniaxial__slider-container">
+            <div class="uniaxial__slider swiper" data-uniaxial__slider>
+              <div class="uniaxial__wrapper swiper-wrapper">
+
+                <div class="uniaxial__slide swiper-slide slide">
+                  <div class="slide__container">
+                    <a class="slide__img-container" href="uniaxial.html">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1199px)" srcset="img/popular/a2013-05-01-01.webp">
+                        <img width="400" height="200" src="img/popular/a2013-05-01-01.jpg" alt="АТЛАНТ 2013-05.">
+                      </picture>
+                    </a>
+                    <div class="slide__info">
+                      <span class="slide__info-keys">ДхШхВ, м:</span>
+                      <span class="slide__info-value">2.0 х 1.3 х 0.5</span>
+                    </div>
+                    <div class="slide__content">
+                      <a href="uniaxial.html">
+                        <h3 class="slide__title">АТЛАНТ 2013-05</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="uniaxial__slide swiper-slide slide">
+                  <div class="slide__container">
+                    <a class="slide__img-container" href="uniaxial.html">
+                      <picture>
+                        <source type="image/webp" srcset="img/popular/t3015-03-01-01.webp">
+                        <img width="400" height="200" src="img/popular/t3015-03-01-01.jpg" alt="Титан 3015-03.">
+                      </picture>
+                    </a>
+                    <div class="slide__info">
+                      <span class="slide__info-keys">ДхШхВ, м:</span>
+                      <span class="slide__info-value">3.0 х 1.5 х 0.3</span>
+                    </div>
+                    <div class="slide__content">
+                      <a href="uniaxial.html">
+                        <h3 class="slide__title">Титан 3015-03</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="uniaxial__slide swiper-slide slide">
+                  <div class="slide__container">
+                    <a class="slide__img-container" href="uniaxial.html">
+                      <picture>
+                        <source type="image/webp" srcset="img/popular/t2013-01-01-01.webp">
+                        <img width="400" height="200" src="img/popular/t2013-01-01-01.jpg" alt="Титан 2013-01.">
+                      </picture>
+                    </a>
+                    <div class="slide__info">
+                      <span class="slide__info-keys">ДхШхВ, м:</span>
+                      <span class="slide__info-value">2.0 х 1.3 х 0.1</span>
+                    </div>
+                    <div class="slide__content">
+                      <a href="uniaxial.html">
+                        <h3 class="slide__title">Титан 2013-01</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="uniaxial__slide swiper-slide slide">
+                  <div class="slide__container">
+                    <a class="slide__img-container" href="uniaxial.html">
+                      <picture>
+                        <source type="image/webp" srcset="img/popular/t3015-03-01-01.webp">
+                        <img width="400" height="200" src="img/popular/t3015-03-01-01.jpg" alt="Титан 3518-05.">
+                      </picture>
+                    </a>
+                    <div class="slide__info">
+                      <span class="slide__info-keys">ДхШхВ, м:</span>
+                      <span class="slide__info-value">3.5 х 1.8 х 0.5</span>
+                    </div>
+                    <div class="slide__content">
+                      <a href="uniaxial.html">
+                        <h3 class="slide__title">Титан 3518-05</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="uniaxial__btns slider-btns">
+              <button
+                class="uniaxial__arrow uniaxial__arrow--prev slider-btns__arrow slider-btns__arrow--prev swiper-arrow swiper-button-prev"
+                type="button" aria-label="Предыдущий слайд." data-uniaxial__arrow--prev>
+                <svg width="16" height="32">
+                  <use href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <button
+                class="uniaxial__arrow uniaxial__arrow--next slider-btns__arrow slider-btns__arrow--next swiper-arrow swiper-button-next"
+                type="button" aria-label="Следующий слайд." data-uniaxial__arrow--next>
+                <svg width="16" height="32">
+                  <use href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <a class="uniaxial__link" href="uniaxial.html">Смотреть все</a>
+        </div>
+      </section>
+
+      <section class="biaxial" id="biaxial">
+        <div class="container biaxial__container">
+          <h2 class="biaxial__title section-title">Двухосные прицепы</h2>
+          <p class="biaxial__descr section-descr">Ваши новые надёжные помощники по&nbsp;дому. Повышенная
+            грузоподъёмность
+            и&nbsp;устойчивость
+            прицепов, из-за наличия двух осей, позволит осуществить любые необходимые перевозки. Прицепы имеют
+            надёжную
+            защиту от&nbsp;коррозии в&nbsp;результате метода горячего оцинкования.
+            Обладают эргономичной и&nbsp;лёгкой конструкцией, которая позволяет экономить на&nbsp;топливе. Благодаря
+            оптимальным
+            размерам придает удобство
+            маневрирования на
+            дорогах.</p>
+          <div class="biaxial__slider-container">
+            <div class="biaxial__slider swiper" data-biaxial__slider>
+              <div class="biaxial__wrapper swiper-wrapper">
+
+                <div class="biaxial__slide swiper-slide slide">
+                  <div class="slide__container">
+                    <a class="slide__img-container" href="biaxial.html">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1199px)"
+                          srcset="img/popular/t-02-2515-01-01-00.webp">
+                        <img width="400" height="200" src="img/popular/t-02-2515-01-01-00.jpg" alt="Титан 2ос.2515-01.">
+                      </picture>
+                    </a>
+                    <div class="slide__info">
+                      <span class="slide__info-keys">ДхШхВ, м:</span>
+                      <span class="slide__info-value">2.5 х 1.5 х 0.1</span>
+                    </div>
+                    <div class="slide__content">
+                      <a href="biaxial.html">
+                        <h3 class="slide__title">Титан 2ос.2515-01</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="biaxial__slide swiper-slide slide">
+                  <div class="slide__container">
+                    <a class="slide__img-container" href="biaxial.html">
+                      <picture>
+                        <source type="image/webp" srcset="img/popular/t-02-3515-03-01-01.webp">
+                        <img width="400" height="200" src="img/popular/t-02-3515-03-01-01.jpg" alt="Титан 2ос.3515-03.">
+                      </picture>
+                    </a>
+                    <div class="slide__info">
+                      <span class="slide__info-keys">ДхШхВ, м:</span>
+                      <span class="slide__info-value">3.5 х 1.5 х 0.3</span>
+                    </div>
+                    <div class="slide__content">
+                      <a href="biaxial.html">
+                        <h3 class="slide__title">Титан 2ос.3515-03</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="biaxial__slide swiper-slide slide">
+                  <div class="slide__container">
+                    <a class="slide__img-container" href="biaxial.html">
+                      <picture>
+                        <source type="image/webp" srcset="img/popular/t-02-3518-03-01-01.webp">
+                        <img width="400" height="200" src="img/popular/t-02-3518-03-01-01.jpg" alt="Титан 2ос.3518-03.">
+                      </picture>
+                    </a>
+                    <div class="slide__info">
+                      <span class="slide__info-keys">ДхШхВ, м:</span>
+                      <span class="slide__info-value">3.5 х 1.8 х 0.3</span>
+                    </div>
+                    <div class="slide__content">
+                      <a href="biaxial.html">
+                        <h3 class="slide__title">Титан 2ос.3518-03</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="biaxial__slide swiper-slide slide">
+                  <div class="slide__container">
+                    <a class="slide__img-container" href="biaxial.html">
+                      <picture>
+                        <source type="image/webp" srcset="img/popular/t-02-2515-05-01-01.webp">
+                        <img width="400" height="200" src="img/popular/t-02-2515-05-01-01.jpg" alt="Титан 2ос.2515-05.">
+                      </picture>
+                    </a>
+                    <div class="slide__info">
+                      <span class="slide__info-keys">ДхШхВ, м:</span>
+                      <span class="slide__info-value">2.5 х 1.5 х 0.5</span>
+                    </div>
+                    <div class="slide__content">
+                      <a href="biaxial.html">
+                        <h3 class="slide__title">Титан 2ос.2515-05</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="biaxial__btns slider-btns">
+              <button
+                class="biaxial__arrow biaxial__arrow--prev slider-btns__arrow slider-btns__arrow--prev swiper-arrow swiper-button-prev"
+                type="button" aria-label="Предыдущий слайд." data-biaxial__arrow--prev>
+                <svg width="16" height="32">
+                  <use href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <button
+                class="biaxial__arrow biaxial__arrow--next slider-btns__arrow slider-btns__arrow--next swiper-arrow swiper-button-next"
+                type="button" aria-label="Следующий слайд." data-biaxial__arrow--next>
+                <svg width="16" height="32">
+                  <use href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <a class="biaxial__link" href="biaxial.html">Смотреть все</a>
+        </div>
+      </section>
+
+      <section class="boat" id="boat">
+        <div class="container boat__container">
+          <h2 class="boat__title section-title">Прицепы для водной техники</h2>
+          <p class="boat__descr section-descr">Универсальные прицепы для удобной первозки килевых и&nbsp;плоскодонных
+            лодок
+            максимальной
+            длиной до&nbsp;5&nbsp;м. Обладают эргономичной и&nbsp;лёгкой конструкцией, которая позволяет экономить
+            на&nbsp;топливе.
+            Рама и&nbsp;дышло полностью оцинкованы методом горячего оцинкования. Продольные ложементы имеют
+            регулируемый угол
+            наклона и&nbsp;оборудованы передвижными кронштейнами. Они могут быть установлены
+            на&nbsp;необходимую высоту и&nbsp;ширину лодки.</p>
+          <div class="boat__slider-container">
+            <div class="boat__slider swiper" data-boat__slider>
+              <div class="boat__wrapper swiper-wrapper">
+
+                <div class="boat__slide swiper-slide slide">
+                  <div class="slide__container">
+                    <a class="slide__img-container" href="boat.html">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1199px)" srcset="img/popular/l-250-01-00.webp">
+                        <img width="400" height="200" src="img/popular/l-250-01-00.jpg" alt="Титан Лодочный-2 5.0.">
+                      </picture>
+                    </a>
+                    <div class="slide__content">
+                      <a href="boat.html">
+                        <h3 class="slide__title">Титан Лодочный-2 5.0</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="boat__slide swiper-slide slide">
+                  <div class="slide__container">
+                    <a class="slide__img-container" href="boat.html">
+                      <picture>
+                        <source type="image/webp" srcset="img/popular/l-143-01-00.webp">
+                        <img width="400" height="200" src="img/popular/l-143-01-00.jpg" alt="Титан Лодочный-1 4.3.">
+                      </picture>
+                    </a>
+                    <div class="slide__content">
+                      <a href="boat.html">
+                        <h3 class="slide__title">Титан Лодочный-1 4.3</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="boat__slide swiper-slide slide">
+                  <div class="slide__container">
+                    <a class="slide__img-container" href="boat.html">
+                      <picture>
+                        <source type="image/webp" srcset="img/popular/l-240-01-00.webp">
+                        <img width="400" height="200" src="img/popular/l-240-01-00.jpg"
+                          alt="Титан Лодочный-2 4.0 (Гидроцикл).">
+                      </picture>
+                    </a>
+                    <div class="slide__content">
+                      <a href="boat.html">
+                        <h3 class="slide__title">Титан Лодочный-2 4.0 (Гидроцикл)</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="boat__btns slider-btns">
+              <button
+                class="boat__arrow boat__arrow--prev slider-btns__arrow slider-btns__arrow--prev swiper-arrow swiper-button-prev"
+                type="button" aria-label="Предыдущий слайд." data-boat__arrow--prev>
+                <svg width="16" height="32">
+                  <use href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <button
+                class="boat__arrow boat__arrow--next slider-btns__arrow slider-btns__arrow--next swiper-arrow swiper-button-next"
+                type="button" aria-label="Следующий слайд." data-boat__arrow--next>
+                <svg width="16" height="32">
+                  <use href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <a class="boat__link" href="boat.html">Смотреть все</a>
+        </div>
+      </section>
+
+    </main>
+    <footer class="page-footer">
+      <div class="container page-footer__container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo logo logo--footer">
+            <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
+              <svg width="205" height="62">
+                <use href="img/sprite.svg#icon-logo-dark"></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="page-footer__nav nav nav--footer">
+            <ul class="page-footer__list nav__list nav__list--footer">
+              <li class="page-footer__item nav__item">
+                <a class="page-footer__link nav__link" href="index.html" data-link-menu>Главная</a>
+              </li>
+              <li class="page-footer__item nav__item">
+                <a class="page-footer__link nav__link" href="uniaxial.html">Одноосные прицепы</a>
+              </li>
+              <li class="page-footer__item nav__item">
+                <a class="page-footer__link nav__link" href="biaxial.html" data-link-menu>Двухосные прицепы</a>
+              </li>
+              <li class="page-footer__item nav__item">
+                <a class="page-footer__link nav__link" href="boat.html" data-link-menu>Прицепы для водной
+                  техники</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="page-footer__about about">
+            <p>ИП&nbsp;Трубчик Анатолий Миронович</p>
+            <p> ИНН 672609854490, ОГРНИП 322673300021844</p>
+            <p>Почтовый адрес 215523, Смоленская область, д.Пушкино, Сафоновский р-он, ул. Пролетарская, дом&nbsp;29,
+              кв. 12</p>
+            <p><span>Телефон: </span><a href="tel:+79206691969">+7 (920) 669-19-69</a><br></p>
+            <p>Почта: <a href="mailto:trubchikanatoly@yandex.by">trubchikanatoly@yandex.by</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay" data-overlay></div>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
 
 </html>
