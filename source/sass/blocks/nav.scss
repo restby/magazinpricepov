@@ -168,7 +168,7 @@
     row-gap: 12px;
   }
 
-  & a {
+  & a[href] {
     color: $text-dark;
 
     @include vp-1200 {

@@ -2148,49 +2148,49 @@ button,
     row-gap: 12px;
   }
 }
-.nav__list--footer a {
+.nav__list--footer a[href] {
   color: #5b5b5b;
 }
 @media (min-width: 1199px) and (hover: hover) {
-  .nav__list--footer a:hover:not(.focus-visible) {
+  .nav__list--footer a[href]:hover:not(.focus-visible) {
     color: #01aa52;
     outline: none;
     border-bottom: 1px solid #01aa52;
   }
-  .nav__list--footer a:hover:not(.focus-visible):active {
+  .nav__list--footer a[href]:hover:not(.focus-visible):active {
     border-color: rgba(255, 255, 255, 0);
   }
 }
 @media (min-width: 1199px) {
-  .nav__list--footer a.focus-visible:focus {
+  .nav__list--footer a[href].focus-visible:focus {
     color: #01aa52;
     outline: none;
     border: 1px solid #01aa52;
   }
 }
 @media (max-width: 1199px) {
-  .nav__list--footer a {
+  .nav__list--footer a[href] {
     letter-spacing: 0.64px;
   }
 }
 @media (max-width: 1199px) and (hover: hover) {
-  .nav__list--footer a:hover:not(.focus-visible) {
+  .nav__list--footer a[href]:hover:not(.focus-visible) {
     color: #01aa52;
     outline: none;
     border-bottom: 1px solid #01aa52;
   }
-  .nav__list--footer a:hover:not(.focus-visible):active {
+  .nav__list--footer a[href]:hover:not(.focus-visible):active {
     color: #5b5b5b;
   }
 }
 @media (max-width: 1199px) {
-  .nav__list--footer a.focus-visible:focus {
+  .nav__list--footer a[href].focus-visible:focus {
     color: #5b5b5b;
     border: 1px solid #01aa52;
   }
 }
 @media (max-width: 767px) {
-  .nav__list--footer a {
+  .nav__list--footer a[href] {
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;

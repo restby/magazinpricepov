@@ -8,8 +8,8 @@ import {initTabs} from './modules/tabs/init-tabs';
 import {Burger} from './modules/header/burger';
 // import {Form} from './modules/form-validate/form';
 import {editInputsPlaceholder} from './modules/form-validate/form-fields';
-import {setDefaultPrice, setPrice} from './business/setPrice';
-import {setOrderData, getOrderData} from './business/initOrder';
+// import {setDefaultPrice, setPrice} from './business/setPrice';
+// import {setOrderData, getOrderData} from './business/initOrder';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -31,10 +31,10 @@ window.addEventListener('DOMContentLoaded', () => {
     initBiaxialSlider();
     initBoatSlider();
     initModalSlider();
-    setDefaultPrice();
-    setPrice();
-    setOrderData();
-    getOrderData();
+    // setDefaultPrice();
+    // setPrice();
+    // setOrderData();
+    // getOrderData();
 
     // const form = new Form();
     // window.form = form;
